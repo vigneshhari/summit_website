@@ -1,45 +1,54 @@
 <!DOCTYPE html>
 <html lang='en'>
-  <head>
-    <meta charset='utf-8'>
-    <meta name="theme-color" content="#8D57D8">
-    <meta name="msapplication-navbutton-color" content="#8D57D8">
-    <meta name="apple-mobile-web-app-status-bar-style" content="#8D57D8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" type="image/png" sizes="48x48" href="favicon.png">
-    <link href="https://fonts.googleapis.com/css?family=Electrolize" rel="stylesheet">
-    <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"> -->
-    <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
-    <link rel='stylesheet' href='css/index.css'/>
-    <script src='js/jquery.min.js'></script>
-    <script src='js/anime.min.js'></script>
-    <script src='js/index.js'></script>
-    <title>Summit</title>
-  </head>
-  <body>
-    <div class='container'>
-      <div id='topMenu'>
-        <div id='menu_contentHome' class='menu-item' onclick="changeContent('contentHome')">
-          <p>Home</p>
-        </div>
-        <div id='menu_contentEvents' class='menu-item' onclick="changeContent('contentEvents')">
-          <p>Events</p>
-        </div>
-        <div id='menu_contentAbout' class='menu-item' onclick="changeContent('contentAbout')">
-          <p>About</p>
-        </div>
-        <div id='menu_contentContactUs' class='menu-item' onclick="changeContent('contentContactUs')">
-          <p>Contact Us</p>
-        </div>
+
+<head>
+  <meta charset='utf-8'>
+  <meta name="theme-color" content="#8D57D8">
+  <meta name="msapplication-navbutton-color" content="#8D57D8">
+  <meta name="apple-mobile-web-app-status-bar-style" content="#8D57D8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/png" sizes="48x48" href="favicon.png">
+  <link href="https://fonts.googleapis.com/css?family=Electrolize" rel="stylesheet">
+  <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"> -->
+  <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
+  <link rel='stylesheet' href='css/index.css' />
+  <script src='js/jquery.min.js'></script>
+  <script src='js/anime.min.js'></script>
+  <script src='js/index.js'></script>
+  <script src="js/particle.js"></script>
+
+
+
+  <title>Summit</title>
+</head>
+
+<body>
+
+  <div class='container'>
+    <div style=" position: absolute;width: 100%;height: 100%;" id="particles-js"></div>
+
+    <div id='topMenu'>
+      <div id='menu_contentHome' class='menu-item' onclick="changeContent('contentHome')">
+        <p>Home</p>
       </div>
-      <div id='contentHome'>
-        <div id='logoContainer'>
-          <div style='height: 450px; width: 350px;'>
-            <svg viewBox="0 0 450 350" id='logo'>
-              <g fill='#171717' stroke='#8D57D8' stroke-width='1' class='lines' >
-                <path id="path0001"
-                  fill="#171717" stroke="#264da3" stroke-width="1"
-                  d="M 176.65,332.50
+      <div id='menu_contentEvents' class='menu-item' onclick="changeContent('contentEvents')">
+        <p>Events</p>
+      </div>
+      <div id='menu_contentAbout' class='menu-item' onclick="changeContent('contentAbout')">
+        <p>About</p>
+      </div>
+      <div id='menu_contentContactUs' class='menu-item' onclick="changeContent('contentContactUs')">
+        <p>Contact Us</p>
+      </div>
+    </div>
+
+    <div id='contentHome'>
+
+      <div id='logoContainer'>
+        <div style='height: 450px; width: 350px;'>
+          <svg viewBox="0 0 450 350" id='logo'>
+            <g fill='#171717' stroke='#8D57D8' stroke-width='1' class='lines'>
+              <path id="path0001" fill="#171717" stroke="#264da3" stroke-width="1" d="M 176.65,332.50
                     C 176.44,333.13 175.97,333.53 175.34,333.50
                       104.13,329.64 42.42,277.93 28.08,205.54
                       28.08,205.53 28.08,205.53 28.08,205.52
@@ -55,9 +64,7 @@
                       97.12,250.88 97.25,251.63 97.38,252.37
                       104.36,290.52 134.24,321.82 171.98,330.42
                       173.83,330.84 175.58,330.99 176.65,332.50" />
-                <path id="path0002"
-                  fill="#171717" stroke="#4db6c8" stroke-width="1"
-                  d="M 205.85,73.61
+              <path id="path0002" fill="#171717" stroke="#4db6c8" stroke-width="1" d="M 205.85,73.61
                       C 207.97,86.48 205.84,99.07 200.51,109.96
                         194.19,122.87 182.56,132.51 169.85,138.74
                         162.80,142.21 155.41,144.92 148.43,148.50
@@ -77,9 +84,7 @@
                         127.31,25.64 131.72,24.46 136.25,23.71
                         157.32,20.24 177.63,28.08 190.97,42.78
                         198.56,51.12 203.89,61.66 205.85,73.61" />
-                <path id="path0003"
-                  fill="#171717" stroke="#f4bf2a" stroke-width="1"
-                  d="M 340.44,145.20
+              <path id="path0003" fill="#171717" stroke="#f4bf2a" stroke-width="1" d="M 340.44,145.20
                     C 329.33,152.49 316.55,157.62 302.60,159.92
                       297.32,160.79 292.08,161.22 286.91,161.23
                       258.25,161.35 231.64,148.86 213.37,128.31
@@ -89,9 +94,7 @@
                       192.73,34.72 195.49,26.97 199.15,19.71
                       200.27,17.48 202.68,16.22 205.15,16.55
                       271.64,25.42 327.58,76.09 340.44,145.20" />
-                <path id="path0004"
-                  fill="#171717" stroke="#5ca82a" stroke-width="1"
-                  d="M 341.04,148.64
+              <path id="path0004" fill="#171717" stroke="#5ca82a" stroke-width="1" d="M 341.04,148.64
                       C 345.13,173.58 343.35,199.37 335.61,223.45
                         327.99,247.20 314.72,269.01 297.16,286.70
                         292.47,291.43 287.15,295.37 282.31,299.89
@@ -105,9 +108,7 @@
                         292.08,161.22 297.32,160.79 302.60,159.92
                         316.55,157.62 329.33,152.49 340.44,145.20
                         340.65,146.35 340.85,147.49 341.04,148.64" />
-                <path id="path1001"
-                    fill="#171717" stroke="#264da3" stroke-width="1"
-                    d="M 201.47,330.01
+              <path id="path1001" fill="#171717" stroke="#e0e0e0" stroke-width="1" d="M 201.47,330.01
                         C 205.43,330.01 207.70,327.90 207.70,324.93
                           207.70,321.90 205.38,320.79 201.93,320.02
                           199.30,319.41 198.06,318.93 198.06,317.58
@@ -123,9 +124,7 @@
                           196.11,325.17 194.37,327.32 194.37,327.32
                           196.20,329.04 198.62,330.01 201.47,330.01
                           201.47,330.01 201.47,330.01 201.47,330.01" />
-                <path id="path1002"
-                    fill="#171717" stroke="#264da3" stroke-width="1"
-                    d="M 225.07,330.03
+              <path id="path1002" fill="#171717" stroke="#e0e0e0" stroke-width="1" d="M 225.07,330.03
                         C 229.37,330.03 232.39,326.98 232.39,322.65
                           232.39,322.65 232.39,313.13 232.39,313.13
                           232.39,313.13 229.39,313.13 229.39,313.13
@@ -136,9 +135,7 @@
                           220.77,313.13 217.75,313.13 217.75,313.13
                           217.75,313.13 217.75,322.65 217.75,322.65
                           217.75,326.98 220.79,330.03 225.07,330.03" />
-                <path id="path1003"
-                    fill="#171717" stroke="#264da3" stroke-width="1"
-                    d="M 243.33,329.74
+              <path id="path1003" fill="#171717" stroke="#e0e0e0" stroke-width="1" d="M 243.33,329.74
                         C 243.33,329.74 246.35,329.74 246.35,329.74
                           246.35,329.74 246.35,318.64 246.35,318.64
                           246.35,318.64 251.81,328.77 251.81,328.77
@@ -151,9 +148,7 @@
                           251.81,323.26 246.35,313.13 246.35,313.13
                           246.35,313.13 243.33,313.13 243.33,313.13
                           243.33,313.13 243.33,329.74 243.33,329.74" />
-                <path id="path1004"
-                    fill="#171717" stroke="#264da3" stroke-width="1"
-                    d="M 271.42,329.74
+              <path id="path1004" fill="#171717" stroke="#e0e0e0" stroke-width="1" d="M 271.42,329.74
                         C 271.42,329.74 274.44,329.74 274.44,329.74
                           274.44,329.74 274.44,318.64 274.44,318.64
                           274.44,318.64 279.90,328.77 279.90,328.77
@@ -166,16 +161,12 @@
                           279.90,323.26 274.44,313.13 274.44,313.13
                           274.44,313.13 271.42,313.13 271.42,313.13
                           271.42,313.13 271.42,329.74 271.42,329.74" />
-                <path id="path1005"
-                    fill="#171717" stroke="#264da3" stroke-width="1"
-                    d="M 299.35,329.74
+              <path id="path1005" fill="#171717" stroke="#e0e0e0" stroke-width="1" d="M 299.35,329.74
                         C 299.35,329.74 302.34,329.74 302.34,329.74
                           302.34,329.74 302.34,313.13 302.34,313.13
                           302.34,313.13 299.35,313.13 299.35,313.13
                           299.35,313.13 299.35,329.74 299.35,329.74" />
-                <path id="path1006"
-                    fill="#171717" stroke="#264da3" stroke-width="1"
-                    d="M 317.53,329.74
+              <path id="path1006" fill="#171717" stroke="#e0e0e0" stroke-width="1" d="M 317.53,329.74
                         C 317.53,329.74 320.53,329.74 320.53,329.74
                           320.53,329.74 320.53,315.88 320.53,315.88
                           320.53,315.88 325.84,315.88 325.84,315.88
@@ -184,9 +175,7 @@
                           312.22,313.13 312.22,315.88 312.22,315.88
                           312.22,315.88 317.53,315.88 317.53,315.88
                           317.53,315.88 317.53,329.74 317.53,329.74" />
-                <path id="path1007"
-                    fill="#171717" stroke="#264da3" stroke-width="1"
-                    d="M 349.13,329.74
+              <path id="path1007" fill="#171717" stroke="#e0e0e0" stroke-width="1" d="M 349.13,329.74
                         C 349.13,329.74 361.33,329.74 361.33,329.74
                           361.33,329.74 361.33,326.98 361.33,326.98
                           361.33,326.98 353.82,326.98 353.82,326.98
@@ -200,24 +189,18 @@
                           358.09,319.44 357.34,320.70 355.24,322.39
                           355.24,322.39 349.13,327.27 349.13,327.27
                           349.13,327.27 349.13,329.74 349.13,329.74" />
-                <path id="path1008"
-                    fill="#171717" stroke="#264da3" stroke-width="1"
-                    d="M 378.33,330.03
+              <path id="path1008" fill="#171717" stroke="#e0e0e0" stroke-width="1" d="M 378.33,330.03
                         C 382.58,330.03 385.58,326.48 385.58,321.42
                           385.58,316.39 382.58,312.83 378.33,312.83
                           374.06,312.83 371.04,316.39 371.04,321.42
                           371.04,326.48 374.06,330.03 378.33,330.03
                           378.33,330.03 378.33,330.03 378.33,330.03" />
-                <path id="path1009"
-                    fill="#171717" stroke="#264da3" stroke-width="1"
-                    d="M 378.33,327.27
+              <path id="path1009" fill="#171717" stroke="#e0e0e0" stroke-width="1" d="M 378.33,327.27
                         C 375.87,327.27 374.13,324.85 374.13,321.42
                           374.13,317.99 375.87,315.59 378.33,315.59
                           380.77,315.59 382.51,317.99 382.51,321.42
                           382.51,324.85 380.77,327.27 378.33,327.27" />
-                <path id="path1010"
-                    fill="#171717" stroke="#264da3" stroke-width="1"
-                    d="M 398.55,329.74
+              <path id="path1010" fill="#171717" stroke="#e0e0e0" stroke-width="1" d="M 398.55,329.74
                         C 398.55,329.74 401.55,329.74 401.55,329.74
                           401.55,329.74 401.55,313.13 401.55,313.13
                           401.55,313.13 399.13,313.13 399.13,313.13
@@ -225,9 +208,7 @@
                           394.47,316.29 395.70,318.42 395.70,318.42
                           395.70,318.42 398.55,316.61 398.55,316.61
                           398.55,316.61 398.55,329.74 398.55,329.74" />
-                <path id="path1011"
-                    fill="#171717" stroke="#264da3" stroke-width="1"
-                    d="M 418.19,312.83
+              <path id="path1011" fill="#171717" stroke="#e0e0e0" stroke-width="1" d="M 418.19,312.83
                         C 414.61,312.83 412.00,315.21 412.00,318.49
                           412.00,321.81 414.54,323.74 417.58,323.74
                           419.28,323.74 420.87,323.04 421.88,321.86
@@ -238,186 +219,306 @@
                           421.98,330.03 425.00,326.28 425.00,321.15
                           425.00,316.37 422.90,312.83 418.19,312.83
                           418.19,312.83 418.19,312.83 418.19,312.83" />
-                <path id="path1012"
-                    fill="#171717" stroke="#264da3" stroke-width="1"
-                    d="M 418.38,321.28
+              <path id="path1012" fill="#171717" stroke="#e0e0e0" stroke-width="1" d="M 418.38,321.28
                         C 416.57,321.28 415.07,320.19 415.07,318.37
                           415.07,316.85 416.30,315.40 418.33,315.40
                           420.34,315.40 421.38,316.78 421.74,318.98
                           421.26,320.38 419.98,321.28 418.38,321.28
                           418.38,321.28 418.38,321.28 418.38,321.28" />
-              </g>
-            </svg>
-          </div>
-        </div>
-        <div id='divCountdown'>
-          <div>Spins off in</div>
-          <div id='countdown'>00:00:00</div>
+            </g>
+          </svg>
         </div>
       </div>
-      <div id='contentEvents'>
-        <div class='heading'>Events</div>
-        <div class='cards'>
-          <div onClick='window.open("event1.html", "_blank")' class='card'>
-            <div class='card-head'>
-              <img style="height: 100%; width: 100%;" src='assets/img/event-image.png' alt="Event logo"/>
-            </div>
-            <div class='card-body'>
-              <p>Event description</p>
-            </div>
-          </div>
-          <div onClick='window.open("event2.html", "_blank")' class='card'>
-            <div class='card-head'>
-              <img style="height: 100%; width: 100%;" src='assets/img/event-image.png' alt="Event logo"/>
-            </div>
-            <div class='card-body'>
-              <p>Event description</p>
-            </div>
-          </div>
-          <div onClick='window.open("event3.html", "_blank")'  class='card'>
-            <div class='card-head'>
-              <img style="height: 100%; width: 100%;" src='assets/img/event-image.png' alt="Event logo"/>
-            </div>
-            <div class='card-body'>
-              <p>Event description</p>
-            </div>
-          </div>
-          <div onClick='window.open("event4.html", "_blank")'  class='card'>
-            <div class='card-head'>
-              <img style="height: 100%; width: 100%;" src='assets/img/event-image.png' alt="Event logo"/>
-            </div>
-            <div class='card-body'>
-              <p>Event description</p>
-            </div>
-          </div>
-          <div onClick='window.open("event5.html", "_blank")'  class='card'>
-            <div class='card-head'>
-              <img style="height: 100%; width: 100%;" src='assets/img/event-image.png' alt="Event logo"/>
-            </div>
-            <div class='card-body'>
-              <p>Event description</p>
-            </div>
-          </div>
-          <div onClick='window.open("event6.html", "_blank")' class='card'>
-            <div class='card-head'>
-              <img style="height: 100%; width: 100%;" src='assets/img/event-image.png' alt="Event logo"/>
-            </div>
-            <div class='card-body'>
-              <p>Event description</p>
-            </div>
-          </div>
-          <div onClick='window.open("event7.html", "_blank")' class='card'>
-            <div class='card-head'>
-              <img style="height: 100%; width: 100%;" src='assets/img/event-image.png' alt="Event logo"/>
-            </div>
-            <div class='card-body'>
-              <p>Event description</p>
-            </div>
-          </div>
-          <div onClick='window.open("event8.html", "_blank")' class='card'>
-            <div class='card-head'>
-              <img style="height: 100%; width: 100%;" src='assets/img/event-image.png' alt="Event logo"/>
-            </div>
-            <div class='card-body'>
-              <p>Event description</p>
-            </div>
-          </div>
-          <div onClick='window.open("event9.html", "_blank")' class='card'>
-            <div class='card-head'>
-              <img style="height: 100%; width: 100%;" src='assets/img/event-image.png' alt="Event logo"/>
-            </div>
-            <div class='card-body'>
-              <p>Event description</p>
-            </div>
-          </div>
-          <div onClick='window.open("event10.html", "_blank")' class='card'>
-            <div class='card-head'>
-              <img style="height: 100%; width: 100%;" src='assets/img/event-image.png' alt="Event logo"/>
-            </div>
-            <div class='card-body'>
-              <p>Event description</p>
-            </div>
-          </div>
-          <div onClick='window.open("event11.html", "_blank")' class='card'>
-            <div class='card-head'>
-              <img style="height: 100%; width: 100%;" src='assets/img/event-image.png' alt="Event logo"/>
-            </div>
-            <div class='card-body'>
-              <p>Event description</p>
-            </div>
-          </div>
-          <div onClick='window.open("event12.html", "_blank")' class='card'>
-            <div class='card-head'>
-              <img style="height: 100%; width: 100%;" src='assets/img/event-image.png' alt="Event logo"/>
-            </div>
-            <div class='card-body'>
-              <p>Event description</p>
-            </div>
-          </div>
-          <div onClick='window.open("event13.html", "_blank")' class='card'>
-            <div class='card-head'>
-              <img style="height: 100%; width: 100%;" src='assets/img/event-image.png' alt="Event logo"/>
-            </div>
-            <div class='card-body'>
-              <p>Event description</p>
-            </div>
-          </div>
-          <div onClick='window.open("event14.html", "_blank")' class='card'>
-            <div class='card-head'>
-              <img style="height: 100%; width: 100%;" src='assets/img/event-image.png' alt="Event logo"/>
-            </div>
-            <div class='card-body'>
-              <p>Event description</p>
-            </div>
-          </div>
-          <div onClick='window.open("event15.html", "_blank")' class='card'>
-            <div class='card-head'>
-              <img style="height: 100%; width: 100%;" src='assets/img/event-image.png' alt="Event logo"/>
-            </div>
-            <div class='card-body'>
-              <p>Event description</p>
-            </div>
-          </div>
-          <div onClick='window.open("event16.html", "_blank")' class='card'>
-            <div class='card-head'>
-              <img style="height: 100%; width: 100%;" src='assets/img/event-image.png' alt="Event logo"/>
-            </div>
-            <div class='card-body'>
-              <p>Event description</p>
-            </div>
-          </div>
-          <div onClick='window.open("event17.html", "_blank")' class='card'>
-            <div class='card-head'>
-              <img style="height: 100%; width: 100%;" src='assets/img/event-image.png' alt="Event logo"/>
-            </div>
-            <div class='card-body'>
-              <p>Event description</p>
-            </div>
-          </div>
-          <div onClick='window.open("event18.html", "_blank")' class='card'>
-            <div class='card-head'>
-              <img style="height: 100%; width: 100%;" src='assets/img/event-image.png' alt="Event logo"/>
-            </div>
-            <div class='card-body'>
-              <p>Event description</p>
-            </div>
-          </div>
-          <div onClick='window.open("event19.html", "_blank")' class='card'>
-            <div class='card-head'>
-              <img style="height: 100%; width: 100%;" src='assets/img/event-image.png' alt="Event logo"/>
-            </div>
-            <div class='card-body'>
-              <p>Event description</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div id='contentAbout'>
-        <div class='heading'>About</div>
-      </div>
-      <div id='contentContactUs'>
-        <div class='heading'>Contact Us</div>
+
+      <div id='divCountdown'>
+        <div>Spins off in</div>
+        <div id='countdown'>00:00:00</div>
       </div>
     </div>
-  </body>
+    <div id='contentEvents'>
+      <div class='heading'>Events</div>
+      <div class='cards'>
+        <div onClick='window.open("event1.html", "_blank")' class='card'>
+          <div class='card-head'>
+            <img style="height: 100%; width: 100%;" src='assets/img/event-image.png' alt="Event logo" />
+          </div>
+          <div class='card-body'>
+            <p>Event description</p>
+          </div>
+        </div>
+        <div onClick='window.open("event2.html", "_blank")' class='card'>
+          <div class='card-head'>
+            <img style="height: 100%; width: 100%;" src='assets/img/event-image.png' alt="Event logo" />
+          </div>
+          <div class='card-body'>
+            <p>Event description</p>
+          </div>
+        </div>
+        <div onClick='window.open("event3.html", "_blank")' class='card'>
+          <div class='card-head'>
+            <img style="height: 100%; width: 100%;" src='assets/img/event-image.png' alt="Event logo" />
+          </div>
+          <div class='card-body'>
+            <p>Event description</p>
+          </div>
+        </div>
+        <div onClick='window.open("event4.html", "_blank")' class='card'>
+          <div class='card-head'>
+            <img style="height: 100%; width: 100%;" src='assets/img/event-image.png' alt="Event logo" />
+          </div>
+          <div class='card-body'>
+            <p>Event description</p>
+          </div>
+        </div>
+        <div onClick='window.open("event5.html", "_blank")' class='card'>
+          <div class='card-head'>
+            <img style="height: 100%; width: 100%;" src='assets/img/event-image.png' alt="Event logo" />
+          </div>
+          <div class='card-body'>
+            <p>Event description</p>
+          </div>
+        </div>
+        <div onClick='window.open("event6.html", "_blank")' class='card'>
+          <div class='card-head'>
+            <img style="height: 100%; width: 100%;" src='assets/img/event-image.png' alt="Event logo" />
+          </div>
+          <div class='card-body'>
+            <p>Event description</p>
+          </div>
+        </div>
+        <div onClick='window.open("event7.html", "_blank")' class='card'>
+          <div class='card-head'>
+            <img style="height: 100%; width: 100%;" src='assets/img/event-image.png' alt="Event logo" />
+          </div>
+          <div class='card-body'>
+            <p>Event description</p>
+          </div>
+        </div>
+        <div onClick='window.open("event8.html", "_blank")' class='card'>
+          <div class='card-head'>
+            <img style="height: 100%; width: 100%;" src='assets/img/event-image.png' alt="Event logo" />
+          </div>
+          <div class='card-body'>
+            <p>Event description</p>
+          </div>
+        </div>
+        <div onClick='window.open("event9.html", "_blank")' class='card'>
+          <div class='card-head'>
+            <img style="height: 100%; width: 100%;" src='assets/img/event-image.png' alt="Event logo" />
+          </div>
+          <div class='card-body'>
+            <p>Event description</p>
+          </div>
+        </div>
+        <div onClick='window.open("event10.html", "_blank")' class='card'>
+          <div class='card-head'>
+            <img style="height: 100%; width: 100%;" src='assets/img/event-image.png' alt="Event logo" />
+          </div>
+          <div class='card-body'>
+            <p>Event description</p>
+          </div>
+        </div>
+        <div onClick='window.open("event11.html", "_blank")' class='card'>
+          <div class='card-head'>
+            <img style="height: 100%; width: 100%;" src='assets/img/event-image.png' alt="Event logo" />
+          </div>
+          <div class='card-body'>
+            <p>Event description</p>
+          </div>
+        </div>
+        <div onClick='window.open("event12.html", "_blank")' class='card'>
+          <div class='card-head'>
+            <img style="height: 100%; width: 100%;" src='assets/img/event-image.png' alt="Event logo" />
+          </div>
+          <div class='card-body'>
+            <p>Event description</p>
+          </div>
+        </div>
+        <div onClick='window.open("event13.html", "_blank")' class='card'>
+          <div class='card-head'>
+            <img style="height: 100%; width: 100%;" src='assets/img/event-image.png' alt="Event logo" />
+          </div>
+          <div class='card-body'>
+            <p>Event description</p>
+          </div>
+        </div>
+        <div onClick='window.open("event14.html", "_blank")' class='card'>
+          <div class='card-head'>
+            <img style="height: 100%; width: 100%;" src='assets/img/event-image.png' alt="Event logo" />
+          </div>
+          <div class='card-body'>
+            <p>Event description</p>
+          </div>
+        </div>
+        <div onClick='window.open("event15.html", "_blank")' class='card'>
+          <div class='card-head'>
+            <img style="height: 100%; width: 100%;" src='assets/img/event-image.png' alt="Event logo" />
+          </div>
+          <div class='card-body'>
+            <p>Event description</p>
+          </div>
+        </div>
+        <div onClick='window.open("event16.html", "_blank")' class='card'>
+          <div class='card-head'>
+            <img style="height: 100%; width: 100%;" src='assets/img/event-image.png' alt="Event logo" />
+          </div>
+          <div class='card-body'>
+            <p>Event description</p>
+          </div>
+        </div>
+        <div onClick='window.open("event17.html", "_blank")' class='card'>
+          <div class='card-head'>
+            <img style="height: 100%; width: 100%;" src='assets/img/event-image.png' alt="Event logo" />
+          </div>
+          <div class='card-body'>
+            <p>Event description</p>
+          </div>
+        </div>
+        <div onClick='window.open("event18.html", "_blank")' class='card'>
+          <div class='card-head'>
+            <img style="height: 100%; width: 100%;" src='assets/img/event-image.png' alt="Event logo" />
+          </div>
+          <div class='card-body'>
+            <p>Event description</p>
+          </div>
+        </div>
+        <div onClick='window.open("event19.html", "_blank")' class='card'>
+          <div class='card-head'>
+            <img style="height: 100%; width: 100%;" src='assets/img/event-image.png' alt="Event logo" />
+          </div>
+          <div class='card-body'>
+            <p>Event description</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id='contentAbout'>
+      <div class='heading'>About</div>
+    </div>
+    <div id='contentContactUs'>
+      <div class='heading'>Contact Us</div>
+    </div>
+  </div>
+
+
+  <script>
+		particlesJS('particles-js',
+
+		{
+			"particles": {
+				"number": {
+					"value": 160,
+					"density": {
+						"enable": true,
+						"value_area": 800
+					}
+				},
+				"color": {
+          "value": ["#264da3","#4db6c8","#f4bf2a","#5ca82a","#E8ffff"]
+				},
+				"shape": {
+					"type": "circle",
+					"stroke": {
+						"width": 0,
+						"color": "#000000"
+					},
+					"polygon": {
+						"nb_sides": 5
+					},
+					"image": {
+						"src": "img/github.svg",
+						"width": 100,
+						"height": 100
+					}
+				},
+				"opacity": {
+					"value": 1,
+					"random": true,
+					"anim": {
+						"enable": true,
+						"speed": 1,
+						"opacity_min": 0,
+						"sync": false
+					}
+				},
+				"size": {
+					"value": 3,
+					"random": true,
+					"anim": {
+						"enable": false,
+						"speed": 4,
+						"size_min": 0.3,
+						"sync": false
+					}
+				},
+				"line_linked": {
+					"enable": false,
+					"distance": 150,
+					"color": "#ffffff",
+					"opacity": 0.4,
+					"width": 1
+				},
+				"move": {
+					"enable": true,
+					"speed": 1,
+					"direction": "none",
+					"random": true,
+					"straight": false,
+					"out_mode": "out",
+					"bounce": false,
+					"attract": {
+						"enable": false,
+						"rotateX": 600,
+						"rotateY": 600
+					}
+				}
+			},
+			"interactivity": {
+				"detect_on": "canvas",
+				"events": {
+					"onhover": {
+						"enable": false,
+						"mode": "grab"
+					},
+					"onclick": {
+						"enable": false,
+						"mode": "repulse"
+					},
+					"resize": true
+				},
+				"modes": {
+					"grab": {
+						"distance": 400,
+						"line_linked": {
+							"opacity": 1
+						}
+					},
+					"bubble": {
+						"distance": 250,
+						"size": 0,
+						"duration": 2,
+						"opacity": 0,
+						"speed": 3
+					},
+					"repulse": {
+						"distance": 400,
+						"duration": 0.4
+					},
+					"push": {
+						"particles_nb": 4
+					},
+					"remove": {
+						"particles_nb": 2
+					}
+				}
+			},
+			"retina_detect": true
+		}
+
+		);
+
+				</script>
+
+</body>
+
 </html>
