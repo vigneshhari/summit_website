@@ -1,0 +1,161 @@
+/* @import './fonts.css'; */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+  background-color: #282828;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #8D57D8;
+}
+body {
+  margin: 0px;
+  width: 100vw;
+  height: 100vh;
+  background-color: #171717;
+  font-family: 'Electrolize';
+  color: #8D57D8;
+  overflow: hidden;
+}
+.container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+#contentHome,
+#contentEvents,
+#contentAbout,
+#contentContactUs {
+  width: 100%;
+  height: calc(100% - 64px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#contentHome {
+  z-index: 1;
+}
+#contentEvents,
+#contentAbout,
+#contentContactUs {
+  justify-content: flex-start;
+  opacity: 0;
+  display: none;
+  z-index: 1;
+}
+#eventDescription {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+}
+#logoContainer {
+  opacity: 0;
+  width: 450px;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #171717;
+}
+#topMenu {
+  height: 64px;
+  font-size: 16px;
+  font-family: 'Electrolize';
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  z-index: 9;
+}
+#divCountdown {
+  display: flex;
+  opacity: 0;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+#divCountdown * {
+  padding: 4px;
+}
+#countdown {
+  font-family: 'Titillium Web';
+  font-weight: bold;
+}
+.heading {
+  font-size: 48px;
+  padding: 32px;
+}
+.cards {
+  margin: 16px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  overflow-y: auto;
+  box-shadow: 0px 0px 4px 2px #8D57D877;
+}
+.card {
+  max-width: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin: 16px;
+  box-shadow: 0px 0px 4px 2px #00000077;
+  animation: scaleCardsDown 300ms ease-out forwards;
+}
+.card:hover {
+  cursor: pointer;
+  animation: scaleCardsUp 300ms ease-out forwards;
+}
+.card .card-head {
+  display: flex;
+}
+.card .card-body {
+  flex: 1 1 0;
+  background-color: #171717;
+  color: #fff;
+  padding: 8px;
+}
+.card .card-body p {
+  margin: 0px;
+}
+.menu-item {
+  opacity: 0;
+  color: #8D57D8;
+  padding: 16px;
+  font-weight: bold;
+  transition: color 500ms ease-in-out;
+}
+.menu-item:hover,
+.menu-item:active,
+.menu-item:focus {
+  cursor: pointer !important;
+  color: #fff !important;
+}
+
+@keyframes scaleCardsUp {
+  from {
+    -webkit-transform: scale(1);
+  }
+  to {
+    -webkit-transform: scale(1.1);
+  }
+}
+@keyframes scaleCardsDown {
+  from {
+    -webkit-transform: scale(1.1);
+  }
+  to {
+    -webkit-transform: scale(1);
+  }
+}
