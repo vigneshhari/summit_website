@@ -8,7 +8,6 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: url('../assets/img/event1-background.jpg') no-repeat center center fixed;
 }
 .section {
   background-color: #171717;
@@ -18,6 +17,7 @@ body {
   box-shadow: #8D57D8 0px 0px 4px 2px;
   border-radius: 4px;
 }
+
 @media screen and (max-width: 1000px) {
   .section {
     padding: 16px;
