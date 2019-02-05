@@ -118,21 +118,28 @@ body {
 }
 .card .card-head {
   display: flex;
+  height: 155px;
+    width: 100%;
 }
 .card .card-body {
   flex: 1 1 0;
-  background-color: #171717;
-  color: #f4bf2a;
+  background-color: #264da3;
+  color: #fff;
   padding: 8px;
 }
 .card .card-body1 {
   flex: 1 1 0;
-  background-color: #171717;
-  color: #4db6c8;
+  background-color: #5ca82a;
+  color: #fff;
   padding: 8px;
 }
 .card .card-body p {
-  margin: 0px;
+  font-size: large;
+  /* margin: 0px; */
+}
+.card .card-body1 p {
+  font-size: large;
+  /* margin: 0px; */
 }
 .menu-item {
   opacity: 0;
