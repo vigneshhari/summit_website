@@ -147,6 +147,14 @@ body {
   cursor: pointer !important;
   color: #fff !important;
 }
+.section {
+  background-color: #171717;
+  padding: 64px;
+  margin: 16px;
+  width: 80vw;
+  box-shadow: #8D57D8 0px 0px 4px 2px;
+  border-radius: 4px;
+}
 
 @keyframes scaleCardsUp {
   from {
