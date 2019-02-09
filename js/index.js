@@ -242,3 +242,19 @@ function init() {
   openingAnimation();
 }
 window.onload = init;
+
+var dark = true ;
+
+function changeColor() {
+  if( dark ){
+    $('.bodyclass').css('background','#ffffff');
+    $('#themeselect').text("Dark Theme");
+    dark = false;
+  }
+  else{
+    $('.bodyclass').css('background','#171717');
+    $('#themeselect').text("Light Theme");
+    dark = true;
+  }
+
+}

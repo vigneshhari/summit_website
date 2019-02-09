@@ -7,7 +7,7 @@
 ::-webkit-scrollbar-thumb {
   background-color: #8D57D8;
 }
-body {
+.bodyclass {
   margin: 0px;
   width: 100vw;
   height: 100vh;
@@ -16,7 +16,7 @@ body {
   color: #8D57D8;
   overflow: hidden;
 }
-.container {
+.containermain {
   height: 100%;
   width: 100%;
   display: flex;
