@@ -32,10 +32,12 @@ function getDateDiff(initialDate, finalDate) {
   return { 'hours': padZeros(hours, 2), 'minutes': padZeros(minutes, 2), 'seconds': padZeros(seconds, 2), };
 }
 function updateCounter() {
-  eventStartDate = new Date('2019-02-01T10:00:00.000Z')
+  eventStartDate = new Date('2019-03-29T10:00:00.000Z')
   setInterval(function () {
     diff = getDateDiff(new Date(), eventStartDate);
-    $('#countdown').text(`${diff['hours']}:${diff['minutes']}:${diff['seconds']}`);
+    days = Math.floor(diff['hours'] / 24) ;
+    hours = diff['hours'] - (days * 24)
+    $('#countdown').text(`${days} Days ${hours} Hours ${diff['minutes']} Minutes ${diff['seconds']} Seconds`);
   }, 1000);
 }
 function pushToRight(elementID, callback=null) {
