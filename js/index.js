@@ -239,7 +239,7 @@ function openingAnimation() {
 function init() {
   detectswipe(document, directContent);
   $(document).keydown(documentKeypress);
-  $('#menu_' + currentContent).css('color', '#ffffff');
+  $('#menu_' + currentContent).css('color', '#FBC02D');
   updateCounter();
   openingAnimation();
 }
