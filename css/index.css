@@ -152,7 +152,7 @@
 .menu-item:active,
 .menu-item:focus {
   cursor: pointer !important;
-  color: #fff !important;
+  color: #FBC02D !important;
 }
 .section {
   background-color: #171717;

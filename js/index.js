@@ -83,7 +83,7 @@ function pullFromRight(elementID, callback=null) {
 function changeContent(elementID) {
   if (currentContent != elementID) {
     $('.menu-item').css('color', '#8D57D8');
-    $('#menu_' + elementID).css('color', '#ffffff');
+    $('#menu_' + elementID).css('color', '#FBC02D');
     slideTimeline = anime.timeline();
 
     firstAnimationCallback = function () {
