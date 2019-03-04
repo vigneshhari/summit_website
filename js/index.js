@@ -250,11 +250,15 @@ var dark = true ;
 function changeColor() {
   if( dark ){
     $('.bodyclass').css('background','#ffffff');
+    $('#path1009').attr("fill" , "rgba(255,255,255,1)")
+    $('#path1012').attr("fill" , "rgba(255,255,255,1)")
     $('#themeselect').text("Dark Theme");
     dark = false;
   }
   else{
     $('.bodyclass').css('background','#171717');
+    $('#path1009').attr("fill" , "rgba(23,23,23,1)")
+    $('#path1012').attr("fill" , "rgba(23,23,23,1)")
     $('#themeselect').text("Light Theme");
     dark = true;
   }
