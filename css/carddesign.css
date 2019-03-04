@@ -201,7 +201,7 @@ html, body {
   }
 
   .info_section {
-    background: linear-gradient(to right, #78cfcff2 50%, transparent 100%);
+    background: linear-gradient(to right, #FBC02D 50%, transparent 100%);
   }
 
   .info_section1 {
@@ -244,8 +244,8 @@ html, body {
     display: inline-grid;
   }
 }
-.bright_back {
-   background: url("https://mr.comingsoon.it/imgdb/locandine/235x336/53750.jpg"); 
+.robowar {
+   background: url("../images/robowar.jpg"); 
 }
 
 .tomb_back {
