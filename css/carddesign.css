@@ -236,7 +236,7 @@ html, body {
   }
 
   .info_section {
-    background: linear-gradient(to top, #e5e6e6 50%, transparent 100%);
+    background: linear-gradient(to top, #FBC02D 50%, transparent 100%);
     display: inline-grid;
   }
   .info_section1 {
