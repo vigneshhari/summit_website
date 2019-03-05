@@ -24,7 +24,7 @@ html, body {
   position: relative;
   display: block;
   width: 800px;
-  height: 350px;
+  height: 100%;
   margin: 30px auto;
   overflow: show;
   border-radius: 10px;
@@ -200,16 +200,18 @@ html, body {
     width: 50%;
   }
 
-  .info_section {
+  .tech {
     background: linear-gradient(to right, #FBC02D 50%, transparent 100%);
   }
 
-  .info_section1 {
-    background: linear-gradient(to right, #dedf77f2 50%, transparent 100%);
+  .art {
+    background: linear-gradient(to right, #EEEEEE 50%, transparent 100%);
   }
 
   .blur_back {
-    width: 80%;
+    width: 100%;
+    height: 100%;
+    object-fit: contain ;
     background-position: -100% 10% !important;
   }
 }
@@ -217,6 +219,7 @@ html, body {
   .movie_card {
     width: 95%;
     margin: 70px auto;
+    margin-bottom: 25%;
     min-height: 350px;
     height: auto;
   }
@@ -235,17 +238,20 @@ html, body {
     width: 100%;
   }
 
-  .info_section {
+  .tech {
     background: linear-gradient(to top, #FBC02D 50%, transparent 100%);
     display: inline-grid;
   }
-  .info_section1 {
-    background: linear-gradient(to top, #e5e6e6 50%, transparent 100%);
+  .art {
+    background: linear-gradient(to top, #EEEEEE 50%, transparent 100%);
     display: inline-grid;
   }
 }
 .robowar {
    background: url("../images/robowar.jpg"); 
+}
+.doodle {
+   background: url("../images/doodle.jpg"); 
 }
 
 .tomb_back {
