@@ -219,7 +219,7 @@ html, body {
   .movie_card {
     width: 95%;
     margin: 70px auto;
-    margin-bottom: 25%;
+    margin-bottom: 200px;
     min-height: 350px;
     height: auto;
   }
