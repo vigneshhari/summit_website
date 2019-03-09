@@ -1,3 +1,9 @@
+var lightcolor = "#262216";
+var darkcolor = "#f6f1ed";
+var currentcolor = darkcolor;
+
+
+
 var currentContent = 'contentHome';
 var contents = [
   'contentHome',
@@ -38,6 +44,7 @@ function updateCounter() {
     days = Math.floor(diff['hours'] / 24) ;
     hours = diff['hours'] - (days * 24)
     $('#countdown').text(`${days} Days ${hours} Hours ${diff['minutes']} Minutes ${diff['seconds']} Seconds`);
+    //$('#countdown').text(`19 Days 0 Hours 0 Minutes 0 Seconds`);
   }, 1000);
 }
 function pushToRight(elementID, callback=null) {
@@ -82,7 +89,7 @@ function pullFromRight(elementID, callback=null) {
 }
 function changeContent(elementID) {
   if (currentContent != elementID) {
-    $('.menu-item').css('color', '#8D57D8');
+    $('.menu-item').css('color', currentcolor);
     $('#menu_' + elementID).css('color', '#FBC02D');
     slideTimeline = anime.timeline();
 
@@ -248,11 +255,19 @@ window.onload = init;
 var dark = true ;
 
 function changeColor() {
+
   if( dark ){
     $('.bodyclass').css('background','#ffffff');
     $('#path1009').attr("fill" , "rgba(255,255,255,1)")
     $('#path1012').attr("fill" , "rgba(255,255,255,1)")
     $('#themeselect').text("Dark Theme");
+    $(".bodyclass").css("color" , lightcolor);
+    $(".section").css("box-shadow" , lightcolor + " 0px 0px 4px 2px");
+    $('.menu-item').css('color', lightcolor);
+    currentcolor = lightcolor;
+    $('#menu_contentChangeColor').css('color', "#FBC02D");
+
+    menu_contentChangeColor
     dark = false;
   }
   else{
@@ -260,7 +275,12 @@ function changeColor() {
     $('#path1009').attr("fill" , "rgba(23,23,23,1)")
     $('#path1012').attr("fill" , "rgba(23,23,23,1)")
     $('#themeselect').text("Light Theme");
+    $(".bodyclass").css("color" , darkcolor);
+    $(".section").css("box-shadow" , darkcolor + " 0px 0px 4px 2px");
+    $('.menu-item').css('color', darkcolor);
+    $('#menu_contentChangeColor').css('color', darkcolor);
     dark = true;
+    currentcolor = darkcolor ;
   }
 
 }
