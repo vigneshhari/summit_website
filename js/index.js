@@ -257,7 +257,7 @@ var dark = true ;
 function changeColor() {
 
   if( dark ){
-    $('.bodyclass').css('background','#ffffff');
+    $('.bodyclass').css('background',"#feffff");
     $('#path1009').attr("fill" , "rgba(255,255,255,1)")
     $('#path1012').attr("fill" , "rgba(255,255,255,1)")
     $('#themeselect').text("Dark Theme");
