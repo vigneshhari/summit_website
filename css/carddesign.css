@@ -204,6 +204,9 @@ html, body {
   .art {
     background: linear-gradient(to right, #EEEEEE 50%, transparent 100%);
   }
+  .cultural {
+    background: linear-gradient(to right, #262216 50%, transparent 100%);
+  }
 
   .blur_back {
     width: 100%;
@@ -241,6 +244,10 @@ html, body {
   }
   .art {
     background: linear-gradient(to top, #EEEEEE 50%, transparent 100%);
+    display: inline-grid;
+  }
+  .cultural {
+    background: linear-gradient(to top, #b56969 50%, transparent 100%);
     display: inline-grid;
   }
 }

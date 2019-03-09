@@ -44,8 +44,8 @@ function updateCounter() {
     diff = getDateDiff(new Date(), eventStartDate);
     days = Math.floor(diff['hours'] / 24) ;
     hours = diff['hours'] - (days * 24)
-    //$('#countdown').text(`${days} Days ${hours} Hours ${diff['minutes']} Minutes ${diff['seconds']} Seconds`);
-    $('#countdown').text(`19 Days 0 Hours 0 Minutes 0 Seconds`);
+    $('#countdown').text(`${days} Days ${hours} Hours ${diff['minutes']} Minutes ${diff['seconds']} Seconds`);
+    //$('#countdown').text(`19 Days 0 Hours 0 Minutes 0 Seconds`);
   }, 1000);
 }
 function pushToRight(elementID, callback=null) {
