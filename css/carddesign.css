@@ -253,6 +253,11 @@ html, body {
   }
 }
 @media screen and (max-width: 768px) {
+
+  .mobilemore {
+    margin-top: 50% !important;
+  }
+
   .menu-item {
   font-size: 10px;
   }
