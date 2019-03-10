@@ -144,6 +144,7 @@
   /* margin: 0px; */
 }
 .menu-item {
+  font-size: 13px;
   opacity: 0;
   color: #f6f1ed;
   padding: 16px;
