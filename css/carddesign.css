@@ -115,7 +115,7 @@ html, body {
   color: #545454;
 }
 .event_card .info_section .event_desc .lighttext{
-  color: #b6b6b6;
+  color: #cacaca;
 }
 .event_card .info_section .event_social {
   height: 10%;
@@ -239,7 +239,12 @@ html, body {
   .cultural {
     background: linear-gradient(to right, #212121 50%, transparent 100%);
   }
-
+  .tiktok{
+    background: linear-gradient(to right, #f7004d 50%, transparent 100%);
+  }
+  .pubg{
+    background: linear-gradient(to right, rgb(240, 196, 75) 50%, transparent 100%);
+  }
   .blur_back {
     width: 100%;
     height: 100%;
@@ -283,6 +288,14 @@ html, body {
     background: linear-gradient(to top, #212121 50%, transparent 100%);
     display: inline-grid;
   }
+  .tiktok {
+    background: linear-gradient(to top, #f7004d 50%, transparent 100%);
+    display: inline-grid;
+  }
+  .pubg {
+    background: linear-gradient(to top, #E8B629 50%, transparent 100%);
+    display: inline-grid;
+  }
 }
 .robowar {
    background: url("../images/robowar.jpg"); 
@@ -293,4 +306,11 @@ html, body {
 .stepup {
   background: url("../images/stepup.jpeg"); 
 }
+.tiktokimage {
+  background: url("../images/tiktok.jpeg"); 
+}
+.pubgimage {
+  background: url("../images/pubg.jpg"); 
+}
+
 
