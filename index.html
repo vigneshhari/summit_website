@@ -57,15 +57,26 @@ background: url('logo.gif') no-repeat center center;
 
 <script>
   $(document).ready(function() {
-   $(window).on("load", function() {
+  
+    $(window).on("load", function() {
 
-      preloaderFadeOutTime = 500;
+preloaderFadeOutTime = 500;
 function hidePreloader() {
 var preloader = $('.spinner-wrapper');
 preloader.fadeOut(preloaderFadeOutTime);
 }
 hidePreloader();
 });
+    setTimeout(function(){
+      preloaderFadeOutTime = 500;
+function hidePreloader() {
+var preloader = $('.spinner-wrapper');
+preloader.fadeOut(preloaderFadeOutTime);
+}
+hidePreloader();
+},1500);
+
+   
 });
   </script>
 
