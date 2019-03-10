@@ -219,7 +219,7 @@ html, body {
   .event_card {
     width: 95%;
     margin: 70px auto;
-    margin-bottom: 200px;
+    margin-bottom: 75%;
     min-height: 350px;
     height: auto;
   }
@@ -232,6 +232,7 @@ html, body {
   .event_header {
     width: 100%;
     margin-top: 85px;
+    padding-top: 50% !important;
   }
 
   .event_desc {
