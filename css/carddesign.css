@@ -256,7 +256,7 @@ html, body {
   .event_card {
     width: 95%;
     margin: 70px auto;
-    margin-bottom: 75%;
+    margin-bottom: 100%;
     min-height: 350px;
     height: auto;
   }
