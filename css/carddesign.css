@@ -21,7 +21,7 @@ html, body {
   position: relative;
   display: block;
   width: 800px;
-  height: 100%;
+  height: auto;
   margin: 30px auto;
   overflow: show;
   border-radius: 10px;
@@ -55,15 +55,25 @@ html, body {
   padding: 25px;
   height: 40%;
 }
-.event_card .info_section .event_header h1 {
+.event_card .info_section .event_header .dark h1 {
   color: black;
   font-weight: 400;
 }
-.event_card .info_section .event_header h4 {
+.event_card .info_section .event_header .light h1 {
+  color: white;
+  font-weight: 400;
+}
+.event_card .info_section .event_header .dark h4 {
   color: #555;
   font-weight: 400;
 }
-.event_card .info_section .event_header .minutes {
+.event_card .info_section .event_header .light h4 {
+  color: whitesmoke;
+  font-weight: 400;
+}
+
+
+.event_card .info_section .event_header  .minutes .dark {
   display: inline-block;
   margin-top: 15px;
   color: #555;
@@ -71,11 +81,25 @@ html, body {
   border-radius: 5px;
   border: 1px solid rgba(0, 0, 0, 0.05);
 }
-.event_card .info_section .event_header .type {
+.event_card .info_section .event_header  .minutes .light {
   display: inline-block;
-  color: #959595;
+  margin-top: 15px;
+  color: whitesmoke;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+.event_card .info_section .event_header .darktype  {
+  display: inline-block;
+  color: #8f8f8f;
   margin-left: 10px;
 }
+.event_card .info_section .event_header .lighttype  {
+  display: inline-block;
+  color: #cfcfcf;
+  margin-left: 10px;
+}
+
 .event_card .info_section .event_header .locandina {
   position: relative;
   float: left;
@@ -87,8 +111,11 @@ html, body {
   padding: 25px;
   height: 50%;
 }
-.event_card .info_section .event_desc .text {
+.event_card .info_section .event_desc .darktext{
   color: #545454;
+}
+.event_card .info_section .event_desc .lighttext{
+  color: #b6b6b6;
 }
 .event_card .info_section .event_social {
   height: 10%;
@@ -151,9 +178,14 @@ html, body {
   padding: 25px;
   height: 50%;
 }
-.event_card .info_section1 .event_desc .text {
+.event_card .info_section1 .event_desc .darktext {
   color: #545454;
 }
+
+.fa-light {
+  color: whitesmoke !important ;
+}
+
 .event_card .info_section1 .event_social {
   height: 10%;
   padding-left: 15px;
@@ -205,7 +237,7 @@ html, body {
     background: linear-gradient(to right, #EEEEEE 50%, transparent 100%);
   }
   .cultural {
-    background: linear-gradient(to right, #262216 50%, transparent 100%);
+    background: linear-gradient(to right, #212121 50%, transparent 100%);
   }
 
   .blur_back {
@@ -248,7 +280,7 @@ html, body {
     display: inline-grid;
   }
   .cultural {
-    background: linear-gradient(to top, #b56969 50%, transparent 100%);
+    background: linear-gradient(to top, #212121 50%, transparent 100%);
     display: inline-grid;
   }
 }
@@ -257,5 +289,8 @@ html, body {
 }
 .doodle {
    background: url("../images/doodle.jpg"); 
+}
+.stepup {
+  background: url("../images/stepup.jpeg"); 
 }
 
