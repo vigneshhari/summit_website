@@ -245,6 +245,12 @@ html, body {
   .pubg{
     background: linear-gradient(to right, rgb(240, 196, 75) 50%, transparent 100%);
   }
+  .photography{
+    background: linear-gradient(to right, #263238 50%, transparent 100%);
+  }
+
+  
+
   .blur_back {
     width: 100%;
     height: 100%;
@@ -305,6 +311,10 @@ html, body {
     background: linear-gradient(to top, #E8B629 50%, transparent 100%);
     display: inline-grid;
   }
+  .photography {
+    background: linear-gradient(to top, #263238 50%, transparent 100%);
+    display: inline-grid;
+  }
 }
 .robowar {
    background: url("../images/robowar.jpg"); 
@@ -321,5 +331,7 @@ html, body {
 .pubgimage {
   background: url("../images/pubg.jpg"); 
 }
-
+.photographyimage {
+  background: url("../images/photography.jpg"); 
+}
 
