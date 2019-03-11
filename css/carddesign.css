@@ -248,7 +248,9 @@ html, body {
   .photography{
     background: linear-gradient(to right, #263238 50%, transparent 100%);
   }
-
+  .stepandsyncro{
+    background: linear-gradient(to right, #455a64 50%, transparent 100%);
+  }
   
 
   .blur_back {
@@ -315,6 +317,13 @@ html, body {
     background: linear-gradient(to top, #263238 50%, transparent 100%);
     display: inline-grid;
   }
+  .stepandsyncro {
+    background: linear-gradient(to top, #455a64 50%, transparent 100%);
+    display: inline-grid;
+  }
+
+
+  
 }
 .robowar {
    background: url("../images/robowar.jpg"); 
@@ -334,4 +343,6 @@ html, body {
 .photographyimage {
   background: url("../images/photography.jpg"); 
 }
-
+.stepandsyncroimage {
+  background: url("../images/stepandsyncro.jpg"); 
+}
