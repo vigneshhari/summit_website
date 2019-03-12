@@ -3,7 +3,7 @@ var darkcolor = "#f6f1ed";
 var currentcolor = darkcolor;
 
 
-
+var transitionEnd = 'webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend';
 var currentContent = 'contentHome';
 var contents = [
   'contentHome',
@@ -244,12 +244,44 @@ function openingAnimation() {
       }
     });
 }
+function refreshTag() {
+  var selectedTag = $('#tagCombo').val();
+  event_cards = document.querySelectorAll('.event_card');
+  for (var i=0; i<event_cards.length; i++) {
+    eventTag = event_cards[i].getAttribute('tags');
+    if (selectedTag == "All") {
+      $(event_cards[i])
+        .removeClass('none')
+        .outerWidth();
+      $(event_cards[i])
+        .removeClass('fade-out');
+    } else if (eventTag) {
+      if (eventTag.indexOf(selectedTag) == -1) {
+        $(event_cards[i])
+          .addClass('fade-out')
+          .one(transitionEnd, function () {
+            if ($(this).hasClass('fade-out')) {
+              $(this).addClass('none');
+            }
+          })
+      } else {
+        $(event_cards[i])
+          .removeClass('none')
+          .outerWidth();
+        $(event_cards[i])
+          .removeClass('fade-out');
+      }
+    }
+  }
+}
 function init() {
   detectswipe(document, directContent);
   $(document).keydown(documentKeypress);
   $('#menu_' + currentContent).css('color', '#FBC02D');
   updateCounter();
   openingAnimation();
+  $('#tagCombo').change(refreshTag);
+  refreshTag();
 }
 window.onload = init;
 
@@ -283,5 +315,4 @@ function changeColor() {
     dark = true;
     currentcolor = darkcolor ;
   }
-
 }

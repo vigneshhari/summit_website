@@ -96,6 +96,31 @@
   font-size: 48px;
   padding: 32px;
 }
+#tagCombo {
+  height: 40px;
+}
+#searchTagButton:hover {
+  cursor: pointer;
+}
+.block {
+  display: block;
+}
+.fade-in {
+  opacity: 1;
+}
+.fade-out {
+  opacity: 0;
+}
+.none {
+  display: none !important;
+}
+.event_card {
+  transition: opacity 1s ease-in-out;
+}
+.tag {
+  padding: 4px;
+  border: 1px solid white;
+}
 .cards {
   margin: 16px;
   display: flex;
@@ -158,7 +183,6 @@
   color: #FBC02D !important;
 }
 .section {
-  background-color: ;
   padding: 64px;
   margin: 16px;
   width: 80vw;

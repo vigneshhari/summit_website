@@ -27,68 +27,56 @@ Old Fonts
   <script src='js/anime.min.js'></script>
   <script src='js/index.js'></script>
   <script src="js/particle.js"></script>
-
   <style>
-.spinner-wrapper {
-position: fixed;
-top: 0;
-left: 0;
-right: 0;
-bottom: 0;
-background-color: #f6f1ed;
-z-index: 999999;
-}
-
-   .spinner {
-
-    position: absolute;
-top: 48%;
-left: 48%;
-background: url('logo.gif') no-repeat center center;
-	position: absolute;
-	width: 100px;
-	height: 100px;
-	display: inline-block;
-	padding: 0px;
-}
-
-
-    </style>
-
-<script>
-  $(document).ready(function() {
-  
-    $(window).on("load", function() {
-
-preloaderFadeOutTime = 500;
-function hidePreloader() {
-var preloader = $('.spinner-wrapper');
-preloader.fadeOut(preloaderFadeOutTime);
-}
-hidePreloader();
-});
-    setTimeout(function(){
-      preloaderFadeOutTime = 500;
-function hidePreloader() {
-var preloader = $('.spinner-wrapper');
-preloader.fadeOut(preloaderFadeOutTime);
-}
-hidePreloader();
-},1500);
-
-   
-});
+    .spinner-wrapper {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: #f6f1ed;
+      z-index: 999999;
+    }
+    .spinner {
+      position: absolute;
+      top: 48%;
+      left: 48%;
+      background: url('logo.gif') no-repeat center center;
+      position: absolute;
+      width: 100px;
+      height: 100px;
+      display: inline-block;
+      padding: 0px;
+    }
+  </style>
+  <script>
+    $(document).ready(function() {
+      $(window).on("load", function() {
+        preloaderFadeOutTime = 500;
+        function hidePreloader() {
+          var preloader = $('.spinner-wrapper');
+          preloader.fadeOut(preloaderFadeOutTime);
+        }
+        hidePreloader();
+      });
+      setTimeout(function(){
+        preloaderFadeOutTime = 500;
+        function hidePreloader() {
+          var preloader = $('.spinner-wrapper');
+          preloader.fadeOut(preloaderFadeOutTime);
+        }
+        hidePreloader();
+      },1500);
+    });
   </script>
-
-
   <title>Summit 2019 | College of Engineering Chengannur</title>
 </head>
 
 
 <body class="bodyclass">
-<div class="spinner-wrapper">
-  <div class="spinner">
-  </div>
+  <div class="spinner-wrapper">
+    <div class="spinner">
+    </div>
   </div>
 
   <div class='containermain'>
@@ -312,16 +300,25 @@ hidePreloader();
         <div style="color : #FBC02D">Catch us on </div>
         <div id='countdown'>29-31 March 2019</div>
       </div>
-    
     </div>
 
   
 
     <div id='contentEvents'>
       <div class='heading'>Events</div>
+      <div id="tagDiv">
+        <label>Tag</label>
+        <input value="All" list="tags" name="tags" id="tagCombo">
+        <datalist id="tags">
+          <option value="All" selected="selected">All</option>
+          <option value="Tag1">Tag1</option>
+          <option value="Tag2">Tag2</option>
+          <option value="Tag3">Tag3</option>
+        </datalist>
+      </div>
 
 
-<div class="event_card" id="bright">
+<div class="event_card" id="bright" tags="Tag1">
     <a href="doodle.html">
       <div class="info_section art">
         <div class="event_header">
@@ -353,7 +350,7 @@ hidePreloader();
       <div class="blur_back doodle"></div></a>
     </div>
 
-<div class="event_card" id="bright">
+<div class="event_card" id="bright" tags="Tag1 Tag2">
         <a href="tiktok.html">
           <div class="info_section tiktok">
             <div class="event_header">
@@ -386,7 +383,7 @@ hidePreloader();
         </div>
 
 
-    <div class="event_card" id="bright">
+    <div class="event_card" id="bright" tags="Tag2">
             <a href="pubg.html">
               <div class="info_section pubg">
                 <div class="event_header">
@@ -420,7 +417,7 @@ hidePreloader();
               <div class="blur_back pubgimage"></div></a>
             </div>
 
-    <div class="event_card" id="bright">
+    <div class="event_card" id="bright" tags="Tag3  ">
             <a href="photography.html">
               <div class="info_section photography">
                 <div class="event_header">
@@ -479,14 +476,14 @@ hidePreloader();
 </div>
 -->
 
-<div class="light">
-    <h1 class="mobilemore" align=center style="margin-top : 100px ; padding-bottom: 50px">More Events Coming Soon</h1>
+    <div class="light">
+      <h1 class="mobilemore" align=center style="margin-top : 100px ; padding-bottom: 50px">More Events Coming Soon</h1>
     </div>
 
-      </div>
+  </div>
 
-      <div id='contentCultural'>
-          <div class='heading'>Cultural</div>
+  <div id='contentCultural'>
+    <div class='heading'>Cultural</div>
 
 
     <div class="event_card" id="bright">
