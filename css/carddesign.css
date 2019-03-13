@@ -254,8 +254,12 @@ html, body {
   .duetsong{
     background: linear-gradient(to right, #009688 50%, transparent 100%);
   }
-  
-
+  .gsoka{
+    background: linear-gradient(to right, #f5f5f5 50%, transparent 100%);
+  }
+  .spotweb{
+    background: linear-gradient(to right, #26A69A 50%, transparent 100%);
+  }
 
   .blur_back {
     width: 100%;
@@ -329,6 +333,14 @@ html, body {
     background: linear-gradient(to top, #009688 50%, transparent 100%);
     display: inline-grid;
   }
+  .gsoka {
+    background: linear-gradient(to top, #f5f5f5 50%, transparent 100%);
+    display: inline-grid;
+  }
+  .spotweb {
+    background: linear-gradient(to top, #9C27B0 50%, transparent 100%);
+    display: inline-grid;
+  }
 
   
 }
@@ -355,4 +367,10 @@ html, body {
 }
 .duetsongimage {
   background: url("../images/duetsong.jpg"); 
+}
+.gsokaimage {
+  background: url("../images/gsoka.png"); 
+}
+.spotwebimage {
+  background: url("../images/spotweb.jpg"); 
 }
