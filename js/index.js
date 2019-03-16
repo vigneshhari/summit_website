@@ -245,6 +245,41 @@ function openingAnimation() {
       }
     });
 }
+
+function changeTag(tagname) {
+  var selectedTag = tagname;
+  event_cards = document.querySelectorAll('.event_card');
+  for (var i=0; i<event_cards.length; i++) {
+    eventTag = event_cards[i].getAttribute('tags');
+    if (selectedTag == "All") {
+      $(event_cards[i])
+        .removeClass('none')
+        .outerWidth();
+      $(event_cards[i])
+        .removeClass('fade-out');
+    } else if (eventTag) {
+      if (eventTag.indexOf(selectedTag) == -1) {
+        $(event_cards[i])
+          .addClass('fade-out')
+          .one(transitionEnd, function () {
+            if ($(this).hasClass('fade-out')) {
+              $(this).addClass('none');
+            }
+          })
+      } else {
+        $(event_cards[i])
+          .removeClass('none')
+          .outerWidth();
+        $(event_cards[i])
+          .removeClass('fade-out');
+      }
+    }
+  }
+}
+
+
+
+
 function refreshTag() {
   var selectedTag = $('#tagCombo').val();
   event_cards = document.querySelectorAll('.event_card');
