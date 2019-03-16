@@ -228,13 +228,13 @@
 
 .searchbar {
   background: transparent;
-  color: #BDBDBD;
+  color: whitesmoke;
   margin: 10px
 }
 
 .whiteborder {
-  border-color: #BDBDBD ;
-  color: #BDBDBD;
+  border-color: whitesmoke ;
+  color: whitesmoke;
   padding: 6px !important;
 
 }

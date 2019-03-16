@@ -335,7 +335,10 @@ function changeColor() {
     currentcolor = lightcolor;
     $('#menu_contentChangeColor').css('color', "#FBC02D");
 
-    menu_contentChangeColor
+    $('.searchbar').css('color', lightcolor);
+    $('.whiteborder').css('color',lightcolor);
+    $('.whiteborder').css('border-color', lightcolor);
+
     dark = false;
   }
   else{
@@ -347,6 +350,11 @@ function changeColor() {
     $(".section").css("box-shadow" , darkcolor + " 0px 0px 4px 2px");
     $('.menu-item').css('color', darkcolor);
     $('#menu_contentChangeColor').css('color', darkcolor);
+
+    $('.searchbar').css('color', darkcolor);
+    $('.whiteborder').css('color',darkcolor);
+    $('.whiteborder').css('border-color', darkcolor);
+
     dark = true;
     currentcolor = darkcolor ;
   }
