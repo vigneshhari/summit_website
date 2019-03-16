@@ -111,9 +111,6 @@ hidePreloader();
       <div id='menu_contentEvents' class='menu-item' onclick="changeContent('contentEvents')">
         <p>Events</p>
       </div>
-      <div id='menu_contentCultural' class='menu-item' onclick="changeContent('contentCultural')">
-          <p>Cultural</p>
-        </div>
         <div id='menu_contentSponsor' class='menu-item' onclick="changeContent('contentSponsor')">
             <p>Sponsors</p>
           </div>
@@ -341,19 +338,39 @@ hidePreloader();
 
     <div id='contentEvents'>
       <div class='heading'>Events</div>
-      <div id="tagDiv">
-        <label>Tag</label>
-        <input value="All" list="tags" name="tags" id="tagCombo">
-        <datalist id="tags">
-          <option value="All" selected="selected">All</option>
-          <option value="Tag1">Tag1</option>
-          <option value="Tag2">Tag2</option>
-          <option value="Tag3">Tag3</option>
-        </datalist>
+      
+
+      <div class="sectionnew">
+      
+        <div class="row">
+
+            <div class="col-sm" >
+            
+            <button align=center type="button" onclick="changeTag('technical');return true;" class="btn btn-outline-warning padded whiteborder"> Technical </button>
+            <button align=center type="button" onclick="changeTag('online');return true;" class="btn btn-outline-warning padded whiteborder"> Online </button>
+            <button align=center type="button" onclick="changeTag('cultural');return true;" class="btn btn-outline-warning padded whiteborder"> Cultural </button>
+
+            </div>
+      
+            <div class="col-sm">
+                <div id="tagDiv">
+                    <input align=center  class="form-control searchbar" value="All" list="tags" name="tags" id="tagCombo">
+                    <datalist id="tags">
+                      <option value="All" selected="selected">All</option>
+                      <option value="Tag1">Tag1</option>
+                      <option value="Tag2">Tag2</option>
+                      <option value="Tag3">Tag3</option>
+                    </datalist>
+                  </div>
+            </div>
+
+      
+          </div>
+
       </div>
 
 
-<div class="event_card" id="bright" tags="Tag1">
+<div class="event_card" id="bright" tags="online">
     <a href="doodle.html">
       <div class="info_section art">
         <div class="event_header">
@@ -385,7 +402,7 @@ hidePreloader();
       <div class="blur_back doodle"></div></a>
     </div>
 
-<div class="event_card" id="bright" tags="Tag1 Tag2">
+<div class="event_card" id="bright" tags="online">
         <a href="tiktok.html">
           <div class="info_section tiktok">
             <div class="event_header">
@@ -418,7 +435,7 @@ hidePreloader();
         </div>
 
 
-    <div class="event_card" id="bright" tags="Tag2">
+    <div class="event_card" id="bright" tags="online">
             <a href="pubg.html">
               <div class="info_section pubg">
                 <div class="event_header">
@@ -453,7 +470,7 @@ hidePreloader();
               <div class="blur_back pubgimage"></div></a>
             </div>
 
-    <div class="event_card" id="bright" tags="Tag3  ">
+    <div class="event_card" id="bright" tags="online">
             <a href="photography.html">
               <div class="info_section photography">
                 <div class="event_header">
@@ -485,7 +502,7 @@ hidePreloader();
             </div>
 
 
-             <div class="event_card" id="bright">
+             <div class="event_card" id="bright" tags="technical">
                 <a href="gsoka.html">
                   <div class="info_section gsoka">
                     <div class="event_header">
@@ -515,7 +532,7 @@ hidePreloader();
                   <div class="blur_back gsokaimage"></div></a>
                 </div>
 
-                <div class="event_card" id="bright">
+                <div class="event_card" id="bright" tags="technical">
                   <a href="spotweb.html">
                     <div class="info_section spotweb">
                       <div class="event_header">
@@ -547,7 +564,122 @@ hidePreloader();
 
 
 
-
+                  <div class="event_card" id="bright" tags="cultural">
+                      <a href="stepup.html">
+                        <div class="info_section cultural">
+                          <div class="event_header">
+                            <div class="light">
+                            <h1>Step Up</h1>
+                            <h4>Day 1, March 29, 2019</h4>
+                            </div>
+                            <span class="minutes"><div class="light">Prizes Worth 45k</div></span>
+                            <p class="lighttype">Summit 2019</p>
+                          </div>
+                          <div class="event_desc">
+                            <p class="lighttext">
+                                To all the daring dancers out there, Summit 2019, the biggest and boldest techno-cultural extravaganza brought to you by College of Engineering Chengannur, brings you Step Up, an exciting platform to showcase your talents and express your potential. Come join us, and prove your skills, for the stage is all yours to rock and roll!
+                              </p>
+                          </div>
+                          <div class="event_social">
+                            <ul>
+                              <a href="#" class="fa fa-facebook fa-light"></a>
+                              <a href="#" class="fa fa-instagram fa-light"></a>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="blur_back stepup"></div></a>
+                      </div>
+              
+              
+                        <div class="event_card" id="bright" tags="cultural">
+                      <a href="stepandsyncro.html">
+                        <div class="info_section stepandsyncro">
+                          <div class="event_header">
+                            <div class="light">
+                            <h1>Step & Syncro</h1>
+                            <h4>Day 1, March 29, 2019</h4>
+                            </div>
+                            <span class="minutes"><div class="light">Prizes Worth 9k</div></span>
+                            <p class="lighttype">Summit 2019</p>
+                          </div>
+                          <div class="event_desc">
+                            <p class="lighttext">
+              
+              Get ready to find your mate to whirl and twirl to the fine tunes of music!
+              <br>
+              <br>
+              Summit 2019 presents the expressive chance to partner up and groove to the Step & Synchro contest, brought to you by College of Engineering Chengannur. Don't miss out on this opportunity to pair up and sync your steps to the world!
+                              </p>
+                          </div>
+                          <div class="event_social">
+                            <ul>
+                              <a href="#" class="fa fa-facebook fa-light"></a>
+                              <a href="#" class="fa fa-instagram fa-light"></a>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="blur_back stepandsyncroimage"></div></a>
+                      </div>
+              
+              
+                      <div class="event_card" id="bright" tags="cultural">
+                        <a href="duetsong.html">
+                          <div class="info_section duetsong">
+                            <div class="event_header">
+                              <div class="light">
+                              <h1>Duet Song</h1>
+                              <h4>Day 2, March 30, 2019</h4>
+                              </div>
+                              <span class="minutes"><div class="light">Prizes Worth 9k</div></span>
+                              <p class="lighttype">Summit 2019</p>
+                            </div>
+                            <div class="event_desc">
+                              <p class="lighttext">
+                                Find a partner and show us your singing talent!
+                                <br>
+                                Summit 2019 is proud to present you with Duet Song Competition, a podium to showcase your sync with your vocal partner and the perfect blend of your voices.
+                                Join us at College of Engineering Chengannur on 29, 30 and 31 March 2019 to win prizes worth ₹9k and to make your soulful music, the most uplifting version of all by setting it to a skanking, up-tempo rhythm and layering swooping strings over the vocal harmonies.
+                                <br>
+                                    </p>
+                            </div>
+                            <div class="event_social">
+                              <ul>
+                                <a href="#" class="fa fa-facebook fa-light"></a>
+                                <a href="#" class="fa fa-instagram fa-light"></a>
+                              </ul>
+                            </div>
+                          </div>
+                          <div class="blur_back duetsongimage"></div></a>
+                        </div>
+              
+              
+                        <div class="event_card" id="bright" tags="cultural">
+                          <a href="voiceofsummit.html">
+                            <div class="info_section vos">
+                              <div class="event_header">
+                                <div class="dark">
+                                <h1>Voice of Summit</h1>
+                                <h4>Day 2, March 30, 2019</h4>
+                                </div>
+                                <span class="minutes"><div class="dark">Prizes Worth 7k</div></span>
+                                <p class="darktype">Summit 2019</p>
+                              </div>
+                              <div class="event_desc">
+                                <p class="darktext">
+                                  Summit 2019 hosted by College of Engineering Chengannur proudly presents to you the Voice of Summit competition, an extravagant platform to flaunt your voice and show off your singing skills. Come and join us on 30 March 2019 and leave the listeners mind blown with your flawless notes, adding your own style to the music. Bring the house down and win a prize money worth 7k.
+                                  <br>
+                                     So grab that mic, own the stage and steal the show!
+                                      </p>
+                              </div>
+                              <div class="event_social">
+                                <ul>
+                                  <a href="#" class="fa fa-facebook "></a>
+                                  <a href="#" class="fa fa-instagram "></a>
+                                </ul>
+                              </div>
+                            </div>
+                            <div class="blur_back vosimage"></div></a>
+                          </div>
 
 
 <!--
@@ -584,133 +716,7 @@ hidePreloader();
 
   </div>
 
-  <div id='contentCultural'>
-    <div class='heading'>Cultural</div>
 
-
-    <div class="event_card" id="bright">
-        <a href="stepup.html">
-          <div class="info_section cultural">
-            <div class="event_header">
-              <div class="light">
-              <h1>Step Up</h1>
-              <h4>Day 1, March 29, 2019</h4>
-              </div>
-              <span class="minutes"><div class="light">Prizes Worth 45k</div></span>
-              <p class="lighttype">Summit 2019</p>
-            </div>
-            <div class="event_desc">
-              <p class="lighttext">
-                  To all the daring dancers out there, Summit 2019, the biggest and boldest techno-cultural extravaganza brought to you by College of Engineering Chengannur, brings you Step Up, an exciting platform to showcase your talents and express your potential. Come join us, and prove your skills, for the stage is all yours to rock and roll!
-                </p>
-            </div>
-            <div class="event_social">
-              <ul>
-                <a href="#" class="fa fa-facebook fa-light"></a>
-                <a href="#" class="fa fa-instagram fa-light"></a>
-              </ul>
-            </div>
-          </div>
-          <div class="blur_back stepup"></div></a>
-        </div>
-
-
-          <div class="event_card" id="bright">
-        <a href="stepandsyncro.html">
-          <div class="info_section stepandsyncro">
-            <div class="event_header">
-              <div class="light">
-              <h1>Step & Syncro</h1>
-              <h4>Day 1, March 29, 2019</h4>
-              </div>
-              <span class="minutes"><div class="light">Prizes Worth 9k</div></span>
-              <p class="lighttype">Summit 2019</p>
-            </div>
-            <div class="event_desc">
-              <p class="lighttext">
-
-Get ready to find your mate to whirl and twirl to the fine tunes of music!
-<br>
-<br>
-Summit 2019 presents the expressive chance to partner up and groove to the Step & Synchro contest, brought to you by College of Engineering Chengannur. Don't miss out on this opportunity to pair up and sync your steps to the world!
-                </p>
-            </div>
-            <div class="event_social">
-              <ul>
-                <a href="#" class="fa fa-facebook fa-light"></a>
-                <a href="#" class="fa fa-instagram fa-light"></a>
-              </ul>
-            </div>
-          </div>
-          <div class="blur_back stepandsyncroimage"></div></a>
-        </div>
-
-
-        <div class="event_card" id="bright">
-          <a href="duetsong.html">
-            <div class="info_section duetsong">
-              <div class="event_header">
-                <div class="light">
-                <h1>Duet Song</h1>
-                <h4>Day 2, March 30, 2019</h4>
-                </div>
-                <span class="minutes"><div class="light">Prizes Worth 9k</div></span>
-                <p class="lighttype">Summit 2019</p>
-              </div>
-              <div class="event_desc">
-                <p class="lighttext">
-                  Find a partner and show us your singing talent!
-                  <br>
-                  Summit 2019 is proud to present you with Duet Song Competition, a podium to showcase your sync with your vocal partner and the perfect blend of your voices.
-                  Join us at College of Engineering Chengannur on 29, 30 and 31 March 2019 to win prizes worth ₹9k and to make your soulful music, the most uplifting version of all by setting it to a skanking, up-tempo rhythm and layering swooping strings over the vocal harmonies.
-                  <br>
-                      </p>
-              </div>
-              <div class="event_social">
-                <ul>
-                  <a href="#" class="fa fa-facebook fa-light"></a>
-                  <a href="#" class="fa fa-instagram fa-light"></a>
-                </ul>
-              </div>
-            </div>
-            <div class="blur_back duetsongimage"></div></a>
-          </div>
-
-
-          <div class="event_card" id="bright">
-            <a href="voiceofsummit.html">
-              <div class="info_section vos">
-                <div class="event_header">
-                  <div class="dark">
-                  <h1>Voice of Summit</h1>
-                  <h4>Day 2, March 30, 2019</h4>
-                  </div>
-                  <span class="minutes"><div class="dark">Prizes Worth 7k</div></span>
-                  <p class="darktype">Summit 2019</p>
-                </div>
-                <div class="event_desc">
-                  <p class="darktext">
-                    Summit 2019 hosted by College of Engineering Chengannur proudly presents to you the Voice of Summit competition, an extravagant platform to flaunt your voice and show off your singing skills. Come and join us on 30 March 2019 and leave the listeners mind blown with your flawless notes, adding your own style to the music. Bring the house down and win a prize money worth 7k.
-                    <br>
-                       So grab that mic, own the stage and steal the show!
-                        </p>
-                </div>
-                <div class="event_social">
-                  <ul>
-                    <a href="#" class="fa fa-facebook "></a>
-                    <a href="#" class="fa fa-instagram "></a>
-                  </ul>
-                </div>
-              </div>
-              <div class="blur_back vosimage"></div></a>
-            </div>
-
-
-        <div class="light">
-            <h1 class="mobilemore" align=center style="margin-top : 100px ; padding-bottom: 50px">More Events Coming Soon</h1>
-          </div>
-
-      </div>
 
 
 

@@ -225,3 +225,21 @@
 
 
 }
+
+.searchbar {
+  background: transparent;
+  color: #BDBDBD;
+  margin: 10px
+}
+
+.whiteborder {
+  border-color: #BDBDBD ;
+  color: #BDBDBD;
+  padding: 6px !important;
+
+}
+
+.padded {
+  padding: 8px;
+  margin: 10px
+}
