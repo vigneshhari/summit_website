@@ -1,3 +1,3 @@
 # CEC Summit
 
-[Summit website](cecsummit.in)
+[Summit website](https://cecsummit.in/)
