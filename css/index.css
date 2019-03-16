@@ -235,11 +235,13 @@
 .whiteborder {
   border-color: whitesmoke ;
   color: whitesmoke;
-  padding: 6px !important;
 
 }
 
 .padded {
-  padding: 8px;
+  padding: 6px;
+  padding-left: 12px;
+  padding-right: 12px;
+  
   margin: 10px
 }
