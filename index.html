@@ -28,8 +28,9 @@ Old Fonts
   <script src='js/anime.min.js'></script>
   <script src='js/index.js'></script>
   <script src="js/particle.js"></script>
-
-  <style>
+ 
+<style>
+    
 .spinner-wrapper {
 position: fixed;
 top: 0;
@@ -80,8 +81,7 @@ hidePreloader();
 
 });
   </script>
-
-
+  
   <title>Summit 2019 | College of Engineering Chengannur</title>
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-39379599-9"></script>
@@ -96,9 +96,9 @@ hidePreloader();
 
 
 <body class="bodyclass">
-<div class="spinner-wrapper">
-  <div class="spinner">
-  </div>
+  <div class="spinner-wrapper">
+    <div class="spinner">
+    </div>
   </div>
 
   <div class='containermain'>
@@ -341,9 +341,19 @@ hidePreloader();
 
     <div id='contentEvents'>
       <div class='heading'>Events</div>
+      <div id="tagDiv">
+        <label>Tag</label>
+        <input value="All" list="tags" name="tags" id="tagCombo">
+        <datalist id="tags">
+          <option value="All" selected="selected">All</option>
+          <option value="Tag1">Tag1</option>
+          <option value="Tag2">Tag2</option>
+          <option value="Tag3">Tag3</option>
+        </datalist>
+      </div>
 
 
-<div class="event_card" id="bright">
+<div class="event_card" id="bright" tags="Tag1">
     <a href="doodle.html">
       <div class="info_section art">
         <div class="event_header">
@@ -375,7 +385,7 @@ hidePreloader();
       <div class="blur_back doodle"></div></a>
     </div>
 
-<div class="event_card" id="bright">
+<div class="event_card" id="bright" tags="Tag1 Tag2">
         <a href="tiktok.html">
           <div class="info_section tiktok">
             <div class="event_header">
@@ -408,7 +418,7 @@ hidePreloader();
         </div>
 
 
-    <div class="event_card" id="bright">
+    <div class="event_card" id="bright" tags="Tag2">
             <a href="pubg.html">
               <div class="info_section pubg">
                 <div class="event_header">
@@ -443,7 +453,7 @@ hidePreloader();
               <div class="blur_back pubgimage"></div></a>
             </div>
 
-    <div class="event_card" id="bright">
+    <div class="event_card" id="bright" tags="Tag3  ">
             <a href="photography.html">
               <div class="info_section photography">
                 <div class="event_header">
@@ -568,14 +578,14 @@ hidePreloader();
 </div>
 -->
 
-<div class="light">
-    <h1 class="mobilemore" align=center style="margin-top : 100px ; padding-bottom: 50px">More Events Coming Soon</h1>
+    <div class="light">
+      <h1 class="mobilemore" align=center style="margin-top : 100px ; padding-bottom: 50px">More Events Coming Soon</h1>
     </div>
 
-      </div>
+  </div>
 
-      <div id='contentCultural'>
-          <div class='heading'>Cultural</div>
+  <div id='contentCultural'>
+    <div class='heading'>Cultural</div>
 
 
     <div class="event_card" id="bright">
