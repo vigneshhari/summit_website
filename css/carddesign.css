@@ -249,10 +249,20 @@ html, body {
     background: linear-gradient(to right, #263238 50%, transparent 100%);
   }
   .stepandsyncro{
-    background: linear-gradient(to right, #FFFFFF 50%, transparent 100%);
+    background: linear-gradient(to right, #455a64 50%, transparent 100%);
   }
-  
-
+  .duetsong{
+    background: linear-gradient(to right, #009688 50%, transparent 100%);
+  }
+  .gsoka{
+    background: linear-gradient(to right, #f5f5f5 50%, transparent 100%);
+  }
+  .spotweb{
+    background: linear-gradient(to right, #26A69A 50%, transparent 100%);
+  }
+  .vos{
+    background: linear-gradient(to right, #f5f5f5 50%, transparent 100%);
+  }
   .blur_back {
     width: 100%;
     height: 100%;
@@ -321,7 +331,22 @@ html, body {
     background: linear-gradient(to top, #455a64 50%, transparent 100%);
     display: inline-grid;
   }
-
+  .duetsong {
+    background: linear-gradient(to top, #009688 50%, transparent 100%);
+    display: inline-grid;
+  }
+  .gsoka {
+    background: linear-gradient(to top, #f5f5f5 50%, transparent 100%);
+    display: inline-grid;
+  }
+  .spotweb {
+    background: linear-gradient(to top, #9C27B0 50%, transparent 100%);
+    display: inline-grid;
+  }
+  .vos {
+    background: linear-gradient(to top, #f5f5f5 50%, transparent 100%);
+    display: inline-grid;
+  }
 
   
 }
@@ -345,4 +370,16 @@ html, body {
 }
 .stepandsyncroimage {
   background: url("../images/stepandsyncro.jpg"); 
+}
+.duetsongimage {
+  background: url("../images/duetsong.jpg"); 
+}
+.gsokaimage {
+  background: url("../images/gsoka.png"); 
+}
+.spotwebimage {
+  background: url("../images/spotweb.jpg"); 
+}
+.vosimage {
+  background: url("../images/vos.jpg"); 
 }

@@ -27,6 +27,7 @@
 #contentEvents,
 #contentCultural,
 #contentAbout,
+#contentSponsor,
 #contentContactUs {
   width: 100%;
   height: calc(100% - 64px);
@@ -41,6 +42,7 @@
 #contentEvents,
 #contentAbout,
 #contentCultural,
+#contentSponsor,
 #contentContactUs {
   justify-content: flex-start;
   opacity: 0;
@@ -189,6 +191,17 @@
   box-shadow: #f6f1ed 0px 0px 4px 2px;
   border-radius: 4px;
 }
+
+.sectionsponsor {
+  background-color: ;
+  padding-top: 10px;
+  padding-bottom: 250px;
+  margin: 16px;
+  width: 80vw;
+  box-shadow: #f6f1ed 0px 0px 4px 2px;
+  border-radius: 4px;
+}
+
 
 @keyframes scaleCardsUp {
   from {

@@ -9,6 +9,7 @@ var contents = [
   'contentHome',
   'contentEvents',
   'contentCultural',
+  'contentSponsor',  
   'contentAbout',
   'contentContactUs',
 ]

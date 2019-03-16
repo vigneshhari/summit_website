@@ -7,6 +7,7 @@
   <meta name="msapplication-navbutton-color" content="#8D57D8">
   <meta name="apple-mobile-web-app-status-bar-style" content="#8D57D8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <link rel="icon" type="image/png" sizes="48x48" href="favicon.png">
 
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
@@ -21,55 +22,76 @@ Old Fonts
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="css/bootstrap.min.css"/>
-  <link rel='stylesheet' href='css/index.css?v=2' />
-  <link rel='stylesheet' href='css/carddesign.css?v=2' />
+  <link rel='stylesheet' href='css/index.css?v=3' />
+  <link rel='stylesheet' href='css/carddesign.css?v=3' />
   <script src='js/jquery.min.js'></script>
   <script src='js/anime.min.js'></script>
   <script src='js/index.js'></script>
   <script src="js/particle.js"></script>
-  <style>
-    .spinner-wrapper {
-      position: fixed;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background-color: #f6f1ed;
-      z-index: 999999;
-    }
-    .spinner {
-      position: absolute;
-      top: 48%;
-      left: 48%;
-      background: url('logo.gif') no-repeat center center;
-      position: absolute;
-      width: 100px;
-      height: 100px;
-      display: inline-block;
-      padding: 0px;
-    }
-  </style>
-  <script>
-    $(document).ready(function() {
-      $(window).on("load", function() {
-        preloaderFadeOutTime = 500;
-        function hidePreloader() {
-          var preloader = $('.spinner-wrapper');
-          preloader.fadeOut(preloaderFadeOutTime);
-        }
-        hidePreloader();
-      });
-      setTimeout(function(){
-        preloaderFadeOutTime = 500;
-        function hidePreloader() {
-          var preloader = $('.spinner-wrapper');
-          preloader.fadeOut(preloaderFadeOutTime);
-        }
-        hidePreloader();
-      },1500);
-    });
+ 
+<style>
+    
+.spinner-wrapper {
+position: fixed;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+background-color: #f6f1ed;
+z-index: 999999;
+}
+
+   .spinner {
+
+    position: absolute;
+top: 48%;
+left: 48%;
+background: url('logo.gif') no-repeat center center;
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	display: inline-block;
+	padding: 0px;
+}
+
+
+    </style>
+
+<script>
+  $(document).ready(function() {
+
+    $(window).on("load", function() {
+
+preloaderFadeOutTime = 500;
+function hidePreloader() {
+var preloader = $('.spinner-wrapper');
+preloader.fadeOut(preloaderFadeOutTime);
+}
+hidePreloader();
+});
+    setTimeout(function(){
+      preloaderFadeOutTime = 500;
+function hidePreloader() {
+var preloader = $('.spinner-wrapper');
+preloader.fadeOut(preloaderFadeOutTime);
+}
+hidePreloader();
+},1500);
+
+
+});
   </script>
+  
   <title>Summit 2019 | College of Engineering Chengannur</title>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-39379599-9"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-39379599-9');
+</script>
 </head>
 
 
@@ -80,7 +102,7 @@ Old Fonts
   </div>
 
   <div class='containermain'>
-    <div style=" position: absolute;width: 100%;height: 100%;" id="particles-js"></div>
+    <div style=" position: fixed;width: 100%;height: 100%;" id="particles-js"></div>
 
     <div id='topMenu'>
       <div id='menu_contentHome' class='menu-item' onclick="changeContent('contentHome')">
@@ -92,6 +114,9 @@ Old Fonts
       <div id='menu_contentCultural' class='menu-item' onclick="changeContent('contentCultural')">
           <p>Cultural</p>
         </div>
+        <div id='menu_contentSponsor' class='menu-item' onclick="changeContent('contentSponsor')">
+            <p>Sponsors</p>
+          </div>
       <div id='menu_contentAbout' class='menu-item' onclick="changeContent('contentAbout')">
         <p>About</p>
       </div>
@@ -291,18 +316,28 @@ Old Fonts
         </div>
       </div>
 
+
+
       <div id='divCountdown'>
         <div>Spins off in</div>
         <div id='countdown'>00:00:00</div>
       </div>
   <br>
+<!--
+      <div id='divCountdown'>
+        <div style="color : #FBC02D"> <strong>Pubg Match 2 Details</strong> </div>
+        <div id='countdown'>Room ID : 79037 <br> Password : b1x325 <br> Game Has Started </div>
+      </div>
+      <br>
+-->
       <div id='divCountdown'>
         <div style="color : #FBC02D">Catch us on </div>
         <div id='countdown'>29-31 March 2019</div>
       </div>
+
     </div>
 
-  
+
 
     <div id='contentEvents'>
       <div class='heading'>Events</div>
@@ -356,7 +391,7 @@ Old Fonts
             <div class="event_header">
               <div class="light">
               <h1>TikTok Contest</h1>
-              <h4>Ongoing</h4>
+              <h4><strong>Closed</strong></h4>
               </div>
               <span class="minutes">
                 <div class="light">Prizes Worth 3k </div></span>
@@ -389,7 +424,7 @@ Old Fonts
                 <div class="event_header">
                   <div class="dark">
                   <h1>PUBGM Competition</h1>
-                  <h4>March 12, 2019 9:30 PM</h4>
+                  <h4>March 14, 2019 8:00 PM</h4>
                   </div>
                   <span class="minutes">
                     <div class="dark">Prizes Worth 1k Per Game </div></span>
@@ -403,7 +438,8 @@ Old Fonts
                       <br>
                       College of Engineering Chengannur as part of Summit 2019 brings you PUBGM Online Tournament, a game which once played cannot be uninstalled. We expect you all to gear up for the tournament you'll never forget.
                       <br>
-                      Room ID will be released in the event website.
+                      <br>
+                 <!-- Room ID : 79037 <br> Password : b1x325 -->
                     </p>
                 </div>
                 <div class="event_social">
@@ -447,6 +483,72 @@ Old Fonts
               </div>
               <div class="blur_back photographyimage"></div></a>
             </div>
+
+
+             <div class="event_card" id="bright">
+                <a href="gsoka.html">
+                  <div class="info_section gsoka">
+                    <div class="event_header">
+                      <div class="dark">
+                      <h1>G Soka</h1>
+                      <h4>29th March 2019</h4>
+                      </div>
+                      <span class="minutes">
+                        <div class="dark">Prizes Worth 2k </div></span>
+                      <p class="darktype">Googling Competition</p>
+                    </div>
+                    <div class="event_desc">
+                      <p class="darktext">
+                        Computer Science Department College of Engineering Chengannur in association with SUMMIT'19 brings you G-Soka, a Google Search Competition on 29th March, 2019 at the college campus.
+                        <br>
+                        Thinking is the hardest work there is, which is probably the reason why so few engage in it. This is the perfect time to showcase the Googler in you. It is going to be a new and fascinating experience for you so don't miss out this slot people!
+                        <br>
+                        </p>
+                    </div>
+                    <div class="event_social">
+                      <ul>
+                        <a href="#" class="fa fa-facebook "></a>
+                        <a href="#" class="fa fa-instagram "></a>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="blur_back gsokaimage"></div></a>
+                </div>
+
+                <div class="event_card" id="bright">
+                  <a href="spotweb.html">
+                    <div class="info_section spotweb">
+                      <div class="event_header">
+                        <div class="light">
+                        <h1>Spot Web</h1>
+                        <h4>29th March 2019</h4>
+                        </div>
+                        <span class="minutes">
+                          <div class="light">Prizes Worth 2.5k </div></span>
+                        <p class="lighttype">Theme Given on Spot</p>
+                      </div>
+                      <div class="event_desc">
+                        <p class="lighttext">
+                          Summit 2019 presents you Spot Web, the on-the-spot chance to demonstrate your capability to build your own webpage. The topic of concern and time limit will be specified at the event, hosted by College of Engineering Chengannur on the dates of 29, 30, 31 March 2019.
+                          <br>
+                          Prepare to wage your fingers in this web war and claim prizes worth ₹2.5k!
+                          <br>
+                          </p>
+                      </div>
+                      <div class="event_social">
+                        <ul>
+                          <a href="#" class="fa fa-facebook fa-light"></a>
+                          <a href="#" class="fa fa-instagram fa-light"></a>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="blur_back spotwebimage"></div></a>
+                  </div>
+
+
+
+
+
 
 <!--
 <div class="event_card" id="bright">
@@ -492,7 +594,7 @@ Old Fonts
             <div class="event_header">
               <div class="light">
               <h1>Step Up</h1>
-              <h4>Day 2, March 30, 2019</h4>
+              <h4>Day 1, March 29, 2019</h4>
               </div>
               <span class="minutes"><div class="light">Prizes Worth 45k</div></span>
               <p class="lighttype">Summit 2019</p>
@@ -511,7 +613,7 @@ Old Fonts
           </div>
           <div class="blur_back stepup"></div></a>
         </div>
-      
+
 
           <div class="event_card" id="bright">
         <a href="stepandsyncro.html">
@@ -544,6 +646,66 @@ Summit 2019 presents the expressive chance to partner up and groove to the Step 
         </div>
 
 
+        <div class="event_card" id="bright">
+          <a href="duetsong.html">
+            <div class="info_section duetsong">
+              <div class="event_header">
+                <div class="light">
+                <h1>Duet Song</h1>
+                <h4>Day 2, March 30, 2019</h4>
+                </div>
+                <span class="minutes"><div class="light">Prizes Worth 9k</div></span>
+                <p class="lighttype">Summit 2019</p>
+              </div>
+              <div class="event_desc">
+                <p class="lighttext">
+                  Find a partner and show us your singing talent!
+                  <br>
+                  Summit 2019 is proud to present you with Duet Song Competition, a podium to showcase your sync with your vocal partner and the perfect blend of your voices.
+                  Join us at College of Engineering Chengannur on 29, 30 and 31 March 2019 to win prizes worth ₹9k and to make your soulful music, the most uplifting version of all by setting it to a skanking, up-tempo rhythm and layering swooping strings over the vocal harmonies.
+                  <br>
+                      </p>
+              </div>
+              <div class="event_social">
+                <ul>
+                  <a href="#" class="fa fa-facebook fa-light"></a>
+                  <a href="#" class="fa fa-instagram fa-light"></a>
+                </ul>
+              </div>
+            </div>
+            <div class="blur_back duetsongimage"></div></a>
+          </div>
+
+
+          <div class="event_card" id="bright">
+            <a href="voiceofsummit.html">
+              <div class="info_section vos">
+                <div class="event_header">
+                  <div class="dark">
+                  <h1>Voice of Summit</h1>
+                  <h4>Day 2, March 30, 2019</h4>
+                  </div>
+                  <span class="minutes"><div class="dark">Prizes Worth 7k</div></span>
+                  <p class="darktype">Summit 2019</p>
+                </div>
+                <div class="event_desc">
+                  <p class="darktext">
+                    Summit 2019 hosted by College of Engineering Chengannur proudly presents to you the Voice of Summit competition, an extravagant platform to flaunt your voice and show off your singing skills. Come and join us on 30 March 2019 and leave the listeners mind blown with your flawless notes, adding your own style to the music. Bring the house down and win a prize money worth 7k.
+                    <br>
+                       So grab that mic, own the stage and steal the show!
+                        </p>
+                </div>
+                <div class="event_social">
+                  <ul>
+                    <a href="#" class="fa fa-facebook "></a>
+                    <a href="#" class="fa fa-instagram "></a>
+                  </ul>
+                </div>
+              </div>
+              <div class="blur_back vosimage"></div></a>
+            </div>
+
+
         <div class="light">
             <h1 class="mobilemore" align=center style="margin-top : 100px ; padding-bottom: 50px">More Events Coming Soon</h1>
           </div>
@@ -551,23 +713,56 @@ Summit 2019 presents the expressive chance to partner up and groove to the Step 
       </div>
 
 
-    <div id='contentAbout'>
-      <div class='heading'>About</div>
-        <div class='section'>
-          Summit is the biennial techno-cultural fest conducted by College of Engineering,
-Chengannur, aimed on providing a platform for improving the technical,
-non-technical and cultural skills of the young engineering minds. It offers a plethora
-of events ranging from seminars and workshops on the state of art technology
-to contests that push student’s talents and brain beyond the limits, thereby fetching
-the best brains from engineering institutions across the nation. The maiden
-version of the event took place way back in 1998. Then onwards, the event had its
-sequels in 2000, 2002, 2005, 2009, 2012, 2014 and 2017, each time marking a better
-success record. The event has fast emerged as one of the best technical festivals
-of the country over the past years and now resounds as a familiar name across the
-colleges as well as the industry, nationwide. Today, SUMMIT is a wholesome platform
-that students across India can look up to.
-      </div>
+
+    <div id='contentSponsor'>
+      <div class='heading'>Sponsors</div>
+        <div class='sectionsponsor' align = center >
+          <h4>Our Wonderful Sponsors</h4>
+          <br>
+          <br>
+          <div class="container">
+          <div class="row">
+
+            <div class="col-lg-6">
+                  <a href = "https://www.facebook.com/sumayyastextileskylm"><img style="height : 50% ; width : auto" src="logo/sumayya_logo2.png">
+
+<!--
+                  <h3 style="color:whitesmoke">Mullakkal, Alappuzha
+                    Mob: 9605632500
+                  </h3>
+                  <br>
+                  <h3 style="color:whitesmoke"> Near Pvt Bus Stand
+                      Kayamkulam Tel : 0479 2443150
+                    </h3> -->
+                  </a>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
     </div>
+
+
+    <div id='contentAbout'>
+        <div class='heading'>About</div>
+          <div class='section'>
+            Summit is the biennial techno-cultural fest conducted by College of Engineering,
+  Chengannur, aimed on providing a platform for improving the technical,
+  non-technical and cultural skills of the young engineering minds. It offers a plethora
+  of events ranging from seminars and workshops on the state of art technology
+  to contests that push student’s talents and brain beyond the limits, thereby fetching
+  the best brains from engineering institutions across the nation. The maiden
+  version of the event took place way back in 1998. Then onwards, the event had its
+  sequels in 2000, 2002, 2005, 2009, 2012, 2014 and 2017, each time marking a better
+  success record. The event has fast emerged as one of the best technical festivals
+  of the country over the past years and now resounds as a familiar name across the
+  colleges as well as the industry, nationwide. Today, SUMMIT is a wholesome platform
+  that students across India can look up to.
+        </div>
+      </div>
+
+
     <div id='contentContactUs'>
       <div class='heading'>Contact Us</div>
        <div class='section'>
