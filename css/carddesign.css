@@ -257,6 +257,9 @@ html, body {
   .gsoka{
     background: linear-gradient(to right, #f5f5f5 50%, transparent 100%);
   }
+  .traceback{
+    background: linear-gradient(to right, #131426 50%, transparent 100%);
+  }
   .spotweb{
     background: linear-gradient(to right, #26A69A 50%, transparent 100%);
   }
@@ -339,6 +342,10 @@ html, body {
     background: linear-gradient(to top, #f5f5f5 50%, transparent 100%);
     display: inline-grid;
   }
+  .traceback {
+    background: linear-gradient(to top, #131426 50%, transparent 100%);
+    display: inline-grid;
+  }
   .spotweb {
     background: linear-gradient(to top, #9C27B0 50%, transparent 100%);
     display: inline-grid;
@@ -376,6 +383,9 @@ html, body {
 }
 .gsokaimage {
   background: url("../images/gsoka.png"); 
+}
+.tracebackimage {
+  background: url("../images/traceback.jpg");
 }
 .spotwebimage {
   background: url("../images/spotweb.jpg"); 
