@@ -275,48 +275,63 @@ function changeTag(tagname) {
     }
   }
 }
-
-
-
-
-function refreshTag() {
-  var selectedTag = $('#tagCombo').val();
-  event_cards = document.querySelectorAll('.event_card');
+function isMatching(searchText, toMatch) {
+  toMatch = toMatch.toLowerCase();
+  searchText = searchText.toLowerCase();
+  searchTextSplit = searchText.split(' ');
+  if (toMatch.indexOf(searchText) != -1) {
+    return true;
+  } else {
+    return false;
+  }
+}
+function refreshList() {
+  searchText = $('#searchTitle').val();
+  event_cards = $('.event_card');
   for (var i=0; i<event_cards.length; i++) {
-    eventTag = event_cards[i].getAttribute('tags');
-    if (selectedTag == "All") {
+    eventTitle = $(event_cards[i]).find('h1');
+    if(isMatching(searchText, eventTitle.text())) {
+      console.log(eventTitle.text());
       $(event_cards[i])
         .removeClass('none')
         .outerWidth();
       $(event_cards[i])
         .removeClass('fade-out');
-    } else if (eventTag) {
-      if (eventTag.indexOf(selectedTag) == -1) {
-        $(event_cards[i])
-          .addClass('fade-out')
-          .one(transitionEnd, function () {
-            if ($(this).hasClass('fade-out')) {
-              $(this).addClass('none');
-            }
-          })
-      } else {
-        $(event_cards[i])
-          .removeClass('none')
-          .outerWidth();
-        $(event_cards[i])
-          .removeClass('fade-out');
-      }
+    } else {
+      $(event_cards[i])
+        .addClass('fade-out')
+        .one(transitionEnd, function () {
+          if ($(this).hasClass('fade-out')) {
+            $(this).addClass('none');
+          }
+        });
     }
+    // if (eventTitle) {
+    //   if (eventTag.indexOf(selectedTag) == -1) {
+    //     $(event_cards[i])
+    //       .addClass('fade-out')
+    //       .one(transitionEnd, function () {
+    //         if ($(this).hasClass('fade-out')) {
+    //           $(this).addClass('none');
+    //         }
+    //       })
+    //   } else {
+    //     $(event_cards[i])
+    //       .removeClass('none')
+    //       .outerWidth();
+    //     $(event_cards[i])
+    //       .removeClass('fade-out');
+    //   }
+    // }
   }
 }
 function init() {
   detectswipe(document, directContent);
   $(document).keydown(documentKeypress);
   $('#menu_' + currentContent).css('color', '#FBC02D');
+  $('#searchTitle').keyup(refreshList)
   updateCounter();
   openingAnimation();
-  $('#tagCombo').change(refreshTag);
-  refreshTag();
 }
 window.onload = init;
 
