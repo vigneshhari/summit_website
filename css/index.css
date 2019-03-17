@@ -7,6 +7,10 @@
 ::-webkit-scrollbar-thumb {
   background-color: #8D57D8;
 }
+.row {
+  margin-left: 0px;
+  margin-right: 0px;
+}
 .bodyclass {
   margin: 0px;
   width: 100vw;
@@ -221,9 +225,23 @@
 }
 
 
-@media screen and (max-width: 480px) {
-
-
+@media screen and (max-width: 320px) {
+  #logoContainer {
+    height: 270px !important;
+    width: 210px !important;
+  }
+  #logoContainer div {
+    height: 270px !important;
+    width: 210px !important;
+  }
+}
+@media screen and (max-width: 600px) {
+  .menu-item {
+    padding: 6px !important;
+  }
+  .searchbar {
+    margin: 0px !important;
+  }
 }
 
 .searchbar {
