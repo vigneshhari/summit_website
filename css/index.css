@@ -225,7 +225,7 @@
 }
 
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 450px) {
   #logoContainer {
     height: 270px !important;
     width: 210px !important;
