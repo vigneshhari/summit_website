@@ -257,6 +257,9 @@ html, body {
   .impedanzo{
     background: linear-gradient(to right, #0b443d 50%, transparent 100%);
   }
+  .soldra{
+    background: linear-gradient(to right, #318629 50%, transparent 100%);
+  }
   .gsoka{
     background: linear-gradient(to right, #f5f5f5 50%, transparent 100%);
   }
@@ -348,6 +351,10 @@ html, body {
     background: linear-gradient(to top, #0b443d 50%, transparent 100%);
     display: inline-grid;
   }
+  .soldra {
+    background: linear-gradient(to top, #318629 50%, transparent 100%);
+    display: inline-grid;
+  }
   .gsoka {
     background: linear-gradient(to top, #f5f5f5 50%, transparent 100%);
     display: inline-grid;
@@ -394,6 +401,9 @@ html, body {
 }
 .duetsongimage {
   background: url("../images/duetsong.jpg"); 
+}
+.soldraimage {
+  background: url("../images/soldra.jpg"); 
 }
 .gsokaimage {
   background: url("../images/gsoka.png"); 
