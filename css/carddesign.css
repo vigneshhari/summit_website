@@ -252,7 +252,7 @@ html, body {
     background: linear-gradient(to right, #455a64 50%, transparent 100%);
   }
   .duetsong{
-    background: linear-gradient(to right, #009688 50%, transparent 100%);
+    background: linear-gradient(to right, #26445B 50%, transparent 100%);
   }
   .impedanzo{
     background: linear-gradient(to right, #0b443d 50%, transparent 100%);
@@ -264,7 +264,7 @@ html, body {
     background: linear-gradient(to right, #f5f5f5 50%, transparent 100%);
   }
   .gnosis {
-    background: linear-gradient(to right, #f5f5f5 50%, transparent 100%);
+    background: linear-gradient(to right, #FDF5E7 50%, transparent 100%);
   }
   .traceback{
     background: linear-gradient(to right, #131426 50%, transparent 100%);
@@ -273,7 +273,7 @@ html, body {
     background: linear-gradient(to right, #26A69A 50%, transparent 100%);
   }
   .vos{
-    background: linear-gradient(to right, #f5f5f5 50%, transparent 100%);
+    background: linear-gradient(to right, #E8CDC0 50%, transparent 100%);
   }
   .blur_back {
     width: 100%;
@@ -316,63 +316,63 @@ html, body {
   }
 
   .tech {
-    background: linear-gradient(to top, #FBC02D 50%, transparent 100%);
+    background: linear-gradient(to top, #FBC02D 60%, transparent 100%);
     display: inline-grid;
   }
   .art {
-    background: linear-gradient(to top, #EEEEEE 50%, transparent 100%);
+    background: linear-gradient(to top, #EEEEEE 60%, transparent 100%);
     display: inline-grid;
   }
   .cultural {
-    background: linear-gradient(to top, #212121 50%, transparent 100%);
+    background: linear-gradient(to top, #212121 60%, transparent 100%);
     display: inline-grid;
   }
   .tiktok {
-    background: linear-gradient(to top, #f7004d 50%, transparent 100%);
+    background: linear-gradient(to top, #f7004d 60%, transparent 100%);
     display: inline-grid;
   }
   .pubg {
-    background: linear-gradient(to top, #E8B629 50%, transparent 100%);
+    background: linear-gradient(to top, #E8B629 60%, transparent 100%);
     display: inline-grid;
   }
   .photography {
-    background: linear-gradient(to top, #263238 50%, transparent 100%);
+    background: linear-gradient(to top, #263238 60%, transparent 100%);
     display: inline-grid;
   }
   .stepandsyncro {
-    background: linear-gradient(to top, #455a64 50%, transparent 100%);
+    background: linear-gradient(to top, #455a64 60%, transparent 100%);
     display: inline-grid;
   }
   .duetsong {
-    background: linear-gradient(to top, #009688 50%, transparent 100%);
+    background: linear-gradient(to top, #26445B 60%, transparent 100%);
     display: inline-grid;
   }
   .impedanzo {
-    background: linear-gradient(to top, #0b443d 50%, transparent 100%);
+    background: linear-gradient(to top, #0b443d 60%, transparent 100%);
     display: inline-grid;
   }
   .soldra {
-    background: linear-gradient(to top, #318629 50%, transparent 100%);
+    background: linear-gradient(to top, #318629 60%, transparent 100%);
     display: inline-grid;
   }
   .gsoka {
-    background: linear-gradient(to top, #f5f5f5 50%, transparent 100%);
+    background: linear-gradient(to top, #f5f5f5 60%, transparent 100%);
     display: inline-grid;
   }
   .gnosis {
-    background: linear-gradient(to top, #f5f5f5 50%, transparent 100%);
+    background: linear-gradient(to top, #FDF5E7 60%, transparent 100%);
     display: inline-grid;
   }
   .traceback {
-    background: linear-gradient(to top, #131426 50%, transparent 100%);
+    background: linear-gradient(to top, #131426 60%, transparent 100%);
     display: inline-grid;
   }
   .spotweb {
-    background: linear-gradient(to top, #9C27B0 50%, transparent 100%);
+    background: linear-gradient(to top, #9C27B0 60%, transparent 100%);
     display: inline-grid;
   }
   .vos {
-    background: linear-gradient(to top, #f5f5f5 50%, transparent 100%);
+    background: linear-gradient(to top, #E8CDC0 60%, transparent 100%);
     display: inline-grid;
   }
 
