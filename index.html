@@ -28,70 +28,60 @@ Old Fonts
   <script src='js/anime.min.js'></script>
   <script src='js/index.js'></script>
   <script src="js/particle.js"></script>
- 
-<style>
-    
-.spinner-wrapper {
-position: fixed;
-top: 0;
-left: 0;
-right: 0;
-bottom: 0;
-background-color: #f6f1ed;
-z-index: 999999;
-}
 
-   .spinner {
+  <style> 
+    .spinner-wrapper {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: #f6f1ed;
+      z-index: 999999;
+    }
+    .spinner {
+        position: absolute;
+      top: 48%;
+      left: 48%;
+      background: url('logo.gif') no-repeat center center;
+      position: absolute;
+      width: 100px;
+      height: 100px;
+      display: inline-block;
+      padding: 0px;
+    }
+  </style>
 
-    position: absolute;
-top: 48%;
-left: 48%;
-background: url('logo.gif') no-repeat center center;
-	position: absolute;
-	width: 100px;
-	height: 100px;
-	display: inline-block;
-	padding: 0px;
-}
-
-
-    </style>
-
-<script>
-  $(document).ready(function() {
-
-    $(window).on("load", function() {
-
-preloaderFadeOutTime = 500;
-function hidePreloader() {
-var preloader = $('.spinner-wrapper');
-preloader.fadeOut(preloaderFadeOutTime);
-}
-hidePreloader();
-});
-    setTimeout(function(){
-      preloaderFadeOutTime = 500;
-function hidePreloader() {
-var preloader = $('.spinner-wrapper');
-preloader.fadeOut(preloaderFadeOutTime);
-}
-hidePreloader();
-},1500);
-
-
-});
+  <script>
+    $(document).ready(function() {
+      $(window).on("load", function() {
+        preloaderFadeOutTime = 500;
+        function hidePreloader() {
+          var preloader = $('.spinner-wrapper');
+          preloader.fadeOut(preloaderFadeOutTime);
+        }
+        hidePreloader();
+      });
+      setTimeout(function() {
+        preloaderFadeOutTime = 500;
+        function hidePreloader() {
+          var preloader = $('.spinner-wrapper');
+          preloader.fadeOut(preloaderFadeOutTime);
+        }
+        hidePreloader();
+      }, 1500);
+    });
   </script>
-  
+    
   <title>Summit 2019 | College of Engineering Chengannur</title>
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-39379599-9"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-39379599-9');
-</script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-39379599-9"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-39379599-9');
+  </script>
 </head>
 
 
@@ -126,7 +116,6 @@ hidePreloader();
     </div>
 
     <div id='contentHome'>
-
       <div id='logoContainer'>
         <div style='height: 450px; width: 350px;'>
           <svg viewBox="0 0 450 350" id='logo'>
@@ -313,13 +302,11 @@ hidePreloader();
         </div>
       </div>
 
-
-
       <div id='divCountdown'>
         <div>Spins off in</div>
         <div id='countdown'>00:00:00</div>
       </div>
-  <br>
+      <br>
 <!--
       <div id='divCountdown'>
         <div style="color : #FBC02D"> <strong>Pubg Match 2 Details</strong> </div>
@@ -331,108 +318,52 @@ hidePreloader();
         <div style="color : #FBC02D">Catch us on </div>
         <div id='countdown'>29-31 March 2019</div>
       </div>
-
     </div>
 
 
 
     <div id='contentEvents'>
       <div class='heading'>Events</div>
-      
-
       <div class="sectionnew">
-      
         <div class="row">
-
             <div class="col" >
-
-            <button align=center type="button" onclick="changeTag('technical');return true;" class="btn btn-outline-warning padded whiteborder"> Technical </button>
-
+              <button align=center type="button" onclick="changeTag('technical');return true;" class="btn btn-outline-warning padded whiteborder"> Technical </button>
             </div>
             <div class="col" >
-
-            <button align=center type="button" onclick="changeTag('online');return true;" class="btn btn-outline-warning padded whiteborder"> Online </button>
-
+              <button align=center type="button" onclick="changeTag('online');return true;" class="btn btn-outline-warning padded whiteborder"> Online </button>
             </div>
             <div class="col" >
-
-            <button align=center type="button" onclick="changeTag('cultural');return true;" class="btn btn-outline-warning padded whiteborder"> Cultural </button>
-
+              <button align=center type="button" onclick="changeTag('cultural');return true;" class="btn btn-outline-warning padded whiteborder"> Cultural </button>
             </div>
-
           </div>
-          
           <br>
-
-            <div class="col">
-                <div id="tagDiv">
-                    <input align=center  class="form-control searchbar" value="All" list="tags" name="tags" id="tagCombo">
-                    <datalist id="tags">
-                      <option value="All" selected="selected">All</option>
-                      <option value="Tag1">Tag1</option>
-                      <option value="Tag2">Tag2</option>
-                      <option value="Tag3">Tag3</option>
-                    </datalist>
-                  </div>
-
-      
+          <div class="col">
+            <div id="searchDiv">
+              <input id="searchTitle" align=center  class="form-control searchbar" type='text' placeholder="Search events">
+            </div>
           </div>
-
       </div>
 
-
-<div class="event_card" id="bright" tags="online">
-    <a href="doodle.html">
-      <div class="info_section art">
-        <div class="event_header">
-          <div class="dark">
-          <h1>Doodle Competition</h1>
-          <h4>Until March 26, 2019</h4>
-          </div>
-          <span class="minutes">
-            <div class="dark">Prizes Worth 2k </div></span>
-          <p class="darktype">Summit Online Event</p>
-        </div>
-        <div class="event_desc">
-          <p class="darktext">
-              To all the creative doodlers out there!
-              <br>
-              Do you sketch random stuff which ends up looking really cool? Does your absent-minded scribbles turn out to be eye catching doodles? Then here's an awesome opportunity to get that creativity out here!
-              <br>
-              Click on the banner to learn more
-            </p>
-        </div>
-        <div class="event_social">
-          <ul>
-            <a href="#" class="fa fa-facebook"></a>
-            <a href="#" class="fa fa-instagram"></a>
-            <!-- <li><i class="material-icons">share</i></li> -->
-          </ul>
-        </div>
-      </div>
-      <div class="blur_back doodle"></div></a>
-    </div>
-
-<div class="event_card" id="bright" tags="online">
-        <a href="tiktok.html">
-          <div class="info_section tiktok">
+      <div class="event_card" id="bright" tags="online">
+        <a href="doodle.html">
+          <div class="info_section art">
             <div class="event_header">
-              <div class="light">
-              <h1>TikTok Contest</h1>
-              <h4><strong>Closed</strong></h4>
-              </div>
-              <span class="minutes">
-                <div class="light">Prizes Worth 3k </div></span>
-              <p class="lighttype">Summit Online Event</p>
+              <div class="dark">
+              <h1>Doodle Competition</h1>
+              <h4>Until March 26, 2019</h4>
+            </div>
+            <span class="minutes">
+              <div class="dark">Prizes Worth 2k </div></span>
+              <p class="darktype">Summit Online Event</p>
             </div>
             <div class="event_desc">
-              <p class="lighttext">
-                  To all TikTokers out there, SUMMIT 2019 conducted by College of Engineering Chengannur brings you 'TikTok Contest', an exciting opportunity to show your talents.
-                  <br>
-                So guys, what are you waiting for? Take up your phones and start shooting. Creativity level of your video counts, so we expect innovative videos from you.
+              <p class="darktext">
+                To all the creative doodlers out there!
                 <br>
-                Brace yourselves, maybe you can be that lucky winner!
-                </p>
+                Do you sketch random stuff which ends up looking really cool? Does your absent-minded scribbles turn out to be eye catching doodles? Then here's an awesome opportunity to get that creativity out here!
+                <br>
+                Click on the banner to learn more
+              </p>
             </div>
             <div class="event_social">
               <ul>
@@ -442,290 +373,330 @@ hidePreloader();
               </ul>
             </div>
           </div>
-          <div class="blur_back tiktokimage"></div></a>
-        </div>
-
-
-    <div class="event_card" id="bright" tags="online">
-            <a href="pubg.html">
-              <div class="info_section pubg">
-                <div class="event_header">
-                  <div class="dark">
-                  <h1>PUBGM Competition</h1>
-                  <h4>March 14, 2019 8:00 PM</h4>
-                  </div>
-                  <span class="minutes">
-                    <div class="dark">Prizes Worth 1k Per Game </div></span>
-                  <p class="darktype">Summit Online Event</p>
-                </div>
-                <div class="event_desc">
-                  <p class="darktext">
-                      Tired of defeating your friends everytime you play with them?
-                      <br>
-                      Feel you're ready for a fiercer competition?
-                      <br>
-                      College of Engineering Chengannur as part of Summit 2019 brings you PUBGM Online Tournament, a game which once played cannot be uninstalled. We expect you all to gear up for the tournament you'll never forget.
-                      <br>
-                      <br>
-                 <!-- Room ID : 79037 <br> Password : b1x325 -->
-                    </p>
-                </div>
-                <div class="event_social">
-                  <ul>
-                    <a href="#" class="fa fa-facebook"></a>
-                    <a href="#" class="fa fa-instagram"></a>
-                    <!-- <li><i class="material-icons">share</i></li> -->
-                  </ul>
-                </div>
-              </div>
-              <div class="blur_back pubgimage"></div></a>
-            </div>
-
-    <div class="event_card" id="bright" tags="online">
-            <a href="photography.html">
-              <div class="info_section photography">
-                <div class="event_header">
-                  <div class="light">
-                  <h1>Photography Competition</h1>
-                  <h4>Ends on 26th March</h4>
-                  </div>
-                  <span class="minutes">
-                    <div class="light">Prizes Worth 2k </div></span>
-                  <p class="lighttype">Theme Hope</p>
-                </div>
-                <div class="event_desc">
-                  <p class="lighttext">
-                  Are you a passionate photographer? Do you click pictures wherever you go? Then this is for you!
-                  <br>
-                  While clicking away just for the sake of photography is a lot of fun, sometimes a contest can help you raise the bar as a shutterbug. Especially when your calibre will be exhibited in front of a discerning group of judges, and skillfully displayed alongside the winners.
-                  <br>
-                    </p>
-                </div>
-                <div class="event_social">
-                  <ul>
-                    <a href="#" class="fa fa-facebook fa-light"></a>
-                    <a href="#" class="fa fa-instagram fa-light"></a>
-                    <!-- <li><i class="material-icons">share</i></li> -->
-                  </ul>
-                </div>
-              </div>
-              <div class="blur_back photographyimage"></div></a>
-            </div>
-
-
-             <div class="event_card" id="bright" tags="technical">
-                <a href="gsoka.html">
-                  <div class="info_section gsoka">
-                    <div class="event_header">
-                      <div class="dark">
-                      <h1>G Soka</h1>
-                      <h4>29th March 2019</h4>
-                      </div>
-                      <span class="minutes">
-                        <div class="dark">Prizes Worth 2k </div></span>
-                      <p class="darktype">Googling Competition</p>
-                    </div>
-                    <div class="event_desc">
-                      <p class="darktext">
-                        Computer Science Department College of Engineering Chengannur in association with SUMMIT'19 brings you G-Soka, a Google Search Competition on 29th March, 2019 at the college campus.
-                        <br>
-                        Thinking is the hardest work there is, which is probably the reason why so few engage in it. This is the perfect time to showcase the Googler in you. It is going to be a new and fascinating experience for you so don't miss out this slot people!
-                        <br>
-                        </p>
-                    </div>
-                    <div class="event_social">
-                      <ul>
-                        <a href="#" class="fa fa-facebook "></a>
-                        <a href="#" class="fa fa-instagram "></a>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="blur_back gsokaimage"></div></a>
-                </div>
-
-                <div class="event_card" id="bright" tags="technical">
-                  <a href="spotweb.html">
-                    <div class="info_section spotweb">
-                      <div class="event_header">
-                        <div class="light">
-                        <h1>Spot Web</h1>
-                        <h4>29th March 2019</h4>
-                        </div>
-                        <span class="minutes">
-                          <div class="light">Prizes Worth 2.5k </div></span>
-                        <p class="lighttype">Theme Given on Spot</p>
-                      </div>
-                      <div class="event_desc">
-                        <p class="lighttext">
-                          Summit 2019 presents you Spot Web, the on-the-spot chance to demonstrate your capability to build your own webpage. The topic of concern and time limit will be specified at the event, hosted by College of Engineering Chengannur on the dates of 29, 30, 31 March 2019.
-                          <br>
-                          Prepare to wage your fingers in this web war and claim prizes worth ₹2.5k!
-                          <br>
-                          </p>
-                      </div>
-                      <div class="event_social">
-                        <ul>
-                          <a href="#" class="fa fa-facebook fa-light"></a>
-                          <a href="#" class="fa fa-instagram fa-light"></a>
-                        </ul>
-                      </div>
-                    </div>
-                    <div class="blur_back spotwebimage"></div></a>
-                  </div>
-
-
-
-                  <div class="event_card" id="bright" tags="cultural">
-                      <a href="stepup.html">
-                        <div class="info_section cultural">
-                          <div class="event_header">
-                            <div class="light">
-                            <h1>Step Up</h1>
-                            <h4>Day 1, March 29, 2019</h4>
-                            </div>
-                            <span class="minutes"><div class="light">Prizes Worth 45k</div></span>
-                            <p class="lighttype">Summit 2019</p>
-                          </div>
-                          <div class="event_desc">
-                            <p class="lighttext">
-                                To all the daring dancers out there, Summit 2019, the biggest and boldest techno-cultural extravaganza brought to you by College of Engineering Chengannur, brings you Step Up, an exciting platform to showcase your talents and express your potential. Come join us, and prove your skills, for the stage is all yours to rock and roll!
-                              </p>
-                          </div>
-                          <div class="event_social">
-                            <ul>
-                              <a href="#" class="fa fa-facebook fa-light"></a>
-                              <a href="#" class="fa fa-instagram fa-light"></a>
-                            </ul>
-                          </div>
-                        </div>
-                        <div class="blur_back stepup"></div></a>
-                      </div>
-              
-              
-                        <div class="event_card" id="bright" tags="cultural">
-                      <a href="stepandsyncro.html">
-                        <div class="info_section stepandsyncro">
-                          <div class="event_header">
-                            <div class="light">
-                            <h1>Step & Syncro</h1>
-                            <h4>Day 1, March 29, 2019</h4>
-                            </div>
-                            <span class="minutes"><div class="light">Prizes Worth 9k</div></span>
-                            <p class="lighttype">Summit 2019</p>
-                          </div>
-                          <div class="event_desc">
-                            <p class="lighttext">
-              
-              Get ready to find your mate to whirl and twirl to the fine tunes of music!
-              <br>
-              <br>
-              Summit 2019 presents the expressive chance to partner up and groove to the Step & Synchro contest, brought to you by College of Engineering Chengannur. Don't miss out on this opportunity to pair up and sync your steps to the world!
-                              </p>
-                          </div>
-                          <div class="event_social">
-                            <ul>
-                              <a href="#" class="fa fa-facebook fa-light"></a>
-                              <a href="#" class="fa fa-instagram fa-light"></a>
-                            </ul>
-                          </div>
-                        </div>
-                        <div class="blur_back stepandsyncroimage"></div></a>
-                      </div>
-              
-              
-                      <div class="event_card" id="bright" tags="cultural">
-                        <a href="duetsong.html">
-                          <div class="info_section duetsong">
-                            <div class="event_header">
-                              <div class="light">
-                              <h1>Duet Song</h1>
-                              <h4>Day 2, March 30, 2019</h4>
-                              </div>
-                              <span class="minutes"><div class="light">Prizes Worth 9k</div></span>
-                              <p class="lighttype">Summit 2019</p>
-                            </div>
-                            <div class="event_desc">
-                              <p class="lighttext">
-                                Find a partner and show us your singing talent!
-                                <br>
-                                Summit 2019 is proud to present you with Duet Song Competition, a podium to showcase your sync with your vocal partner and the perfect blend of your voices.
-                                Join us at College of Engineering Chengannur on 29, 30 and 31 March 2019 to win prizes worth ₹9k and to make your soulful music, the most uplifting version of all by setting it to a skanking, up-tempo rhythm and layering swooping strings over the vocal harmonies.
-                                <br>
-                                    </p>
-                            </div>
-                            <div class="event_social">
-                              <ul>
-                                <a href="#" class="fa fa-facebook fa-light"></a>
-                                <a href="#" class="fa fa-instagram fa-light"></a>
-                              </ul>
-                            </div>
-                          </div>
-                          <div class="blur_back duetsongimage"></div></a>
-                        </div>
-              
-              
-                        <div class="event_card" id="bright" tags="cultural">
-                          <a href="voiceofsummit.html">
-                            <div class="info_section vos">
-                              <div class="event_header">
-                                <div class="dark">
-                                <h1>Voice of Summit</h1>
-                                <h4>Day 2, March 30, 2019</h4>
-                                </div>
-                                <span class="minutes"><div class="dark">Prizes Worth 7k</div></span>
-                                <p class="darktype">Summit 2019</p>
-                              </div>
-                              <div class="event_desc">
-                                <p class="darktext">
-                                  Summit 2019 hosted by College of Engineering Chengannur proudly presents to you the Voice of Summit competition, an extravagant platform to flaunt your voice and show off your singing skills. Come and join us on 30 March 2019 and leave the listeners mind blown with your flawless notes, adding your own style to the music. Bring the house down and win a prize money worth 7k.
-                                  <br>
-                                     So grab that mic, own the stage and steal the show!
-                                      </p>
-                              </div>
-                              <div class="event_social">
-                                <ul>
-                                  <a href="#" class="fa fa-facebook "></a>
-                                  <a href="#" class="fa fa-instagram "></a>
-                                </ul>
-                              </div>
-                            </div>
-                            <div class="blur_back vosimage"></div></a>
-                          </div>
-
-
-<!--
-<div class="event_card" id="bright">
- <a href="event1.html">
-  <div class="info_section tech">
-    <div class="event_header">
-      <div class="dark">
-      <h1>Robo War</h1>
-      <h4>Day 1 2019, March 29</h4>
+          <div class="blur_back doodle"></div>
+        </a>
       </div>
-      <span class="minutes"><div class="dark">120 Mins</div></span>
-      <p class="darktype">Electronics Department</p>
-    </div>
-    <div class="event_desc">
-      <p class="darktext">
-     Thought WWE was too mainstream , Get to Summit'19 because we are all set to host the largest robotic war in all of kerala, Get ready for intense robotic action that will leave you begging for more.
-      </p>
-    </div>
-    <div class="event_social">
-      <ul>
-        <a href="#" class="fa fa-facebook"></a>
-        <a href="#" class="fa fa-instagram"></a>
-      </ul>
-    </div>
-  </div>
-  <div class="blur_back robowar"></div></a>
-</div>
--->
 
-    <div class="light">
-      <h1 class="mobilemore" align=center style="margin-top : 100px ; padding-bottom: 50px">More Events Coming Soon</h1>
-    </div>
+      <div class="event_card" id="bright" tags="online">
+        <a href="tiktok.html">
+          <div class="info_section tiktok">
+            <div class="event_header">
+              <div class="light">
+              <h1>TikTok Contest</h1>
+              <h4><strong>Closed</strong></h4>
+              </div>
+              <span class="minutes">
+                <div class="light">Prizes Worth 3k </div>
+              </span>
+              <p class="lighttype">Summit Online Event</p>
+            </div>
+            <div class="event_desc">
+              <p class="lighttext">
+                To all TikTokers out there, SUMMIT 2019 conducted by College of Engineering Chengannur brings you 'TikTok Contest', an exciting opportunity to show your talents.
+                <br>
+                So guys, what are you waiting for? Take up your phones and start shooting. Creativity level of your video counts, so we expect innovative videos from you.
+                <br>
+                Brace yourselves, maybe you can be that lucky winner!
+              </p>
+            </div>
+            <div class="event_social">
+              <ul>
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-instagram"></a>
+                <!-- <li><i class="material-icons">share</i></li> -->
+              </ul>
+            </div>
+          </div>
+          <div class="blur_back tiktokimage"></div>
+        </a>
+      </div>
 
-  </div>
+      <div class="event_card" id="bright" tags="online">
+        <a href="pubg.html">
+          <div class="info_section pubg">
+            <div class="event_header">
+              <div class="dark">
+              <h1>PUBGM Competition</h1>
+              <h4>March 14, 2019 8:00 PM</h4>
+              </div>
+              <span class="minutes">
+                <div class="dark">Prizes Worth 1k Per Game </div></span>
+              <p class="darktype">Summit Online Event</p>
+            </div>
+            <div class="event_desc">
+              <p class="darktext">
+                Tired of defeating your friends everytime you play with them?
+                <br>
+                Feel you're ready for a fiercer competition?
+                <br>
+                College of Engineering Chengannur as part of Summit 2019 brings you PUBGM Online Tournament, a game which once played cannot be uninstalled. We expect you all to gear up for the tournament you'll never forget.
+                <br>
+                <br>
+              <!-- Room ID : 79037 <br> Password : b1x325 -->
+              </p>
+            </div>
+            <div class="event_social">
+              <ul>
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-instagram"></a>
+                <!-- <li><i class="material-icons">share</i></li> -->
+              </ul>
+            </div>
+          </div>
+          <div class="blur_back pubgimage"></div>
+        </a>
+      </div>
+
+      <div class="event_card" id="bright" tags="online">
+        <a href="photography.html">
+          <div class="info_section photography">
+            <div class="event_header">
+              <div class="light">
+              <h1>Photography Competition</h1>
+              <h4>Ends on 26th March</h4>
+              </div>
+              <span class="minutes">
+                <div class="light">Prizes Worth 2k </div></span>
+              <p class="lighttype">Theme Hope</p>
+            </div>
+            <div class="event_desc">
+              <p class="lighttext">
+                Are you a passionate photographer? Do you click pictures wherever you go? Then this is for you!
+                <br>
+                While clicking away just for the sake of photography is a lot of fun, sometimes a contest can help you raise the bar as a shutterbug. Especially when your calibre will be exhibited in front of a discerning group of judges, and skillfully displayed alongside the winners.
+                <br>
+              </p>
+            </div>
+            <div class="event_social">
+              <ul>
+                <a href="#" class="fa fa-facebook fa-light"></a>
+                <a href="#" class="fa fa-instagram fa-light"></a>
+                <!-- <li><i class="material-icons">share</i></li> -->
+              </ul>
+            </div>
+          </div>
+          <div class="blur_back photographyimage"></div>
+        </a>
+      </div>
+
+      <div class="event_card" id="bright" tags="technical">
+        <a href="gsoka.html">
+          <div class="info_section gsoka">
+            <div class="event_header">
+              <div class="dark">
+              <h1>G Soka</h1>
+              <h4>29th March 2019</h4>
+              </div>
+              <span class="minutes">
+                <div class="dark">Prizes Worth 2k </div></span>
+              <p class="darktype">Googling Competition</p>
+            </div>
+            <div class="event_desc">
+              <p class="darktext">
+                Computer Science Department College of Engineering Chengannur in association with SUMMIT'19 brings you G-Soka, a Google Search Competition on 29th March, 2019 at the college campus.
+                <br>
+                Thinking is the hardest work there is, which is probably the reason why so few engage in it. This is the perfect time to showcase the Googler in you. It is going to be a new and fascinating experience for you so don't miss out this slot people!
+                <br>
+              </p>
+            </div>
+            <div class="event_social">
+              <ul>
+                <a href="#" class="fa fa-facebook "></a>
+                <a href="#" class="fa fa-instagram "></a>
+              </ul>
+            </div>
+          </div>
+          <div class="blur_back gsokaimage">
+          </div>
+        </a>
+      </div>
+      
+      <div class="event_card" id="bright" tags="technical">
+        <a href="spotweb.html">
+          <div class="info_section spotweb">
+            <div class="event_header">
+              <div class="light">
+                <h1>Spot Web</h1>
+                <h4>29th March 2019</h4>
+              </div>
+              <span class="minutes">
+                <div class="light">Prizes Worth 2.5k </div>
+              </span>
+              <p class="lighttype">Theme Given on Spot</p>
+            </div>
+            <div class="event_desc">
+              <p class="lighttext">
+                Summit 2019 presents you Spot Web, the on-the-spot chance to demonstrate your capability to build your own webpage. The topic of concern and time limit will be specified at the event, hosted by College of Engineering Chengannur on the dates of 29, 30, 31 March 2019.
+                <br>
+                Prepare to wage your fingers in this web war and claim prizes worth ₹2.5k!
+                <br>
+              </p>
+            </div>
+            <div class="event_social">
+              <ul>
+                <a href="#" class="fa fa-facebook fa-light"></a>
+                <a href="#" class="fa fa-instagram fa-light"></a>
+              </ul>
+            </div>
+          </div>
+          <div class="blur_back spotwebimage"></div>
+        </a>
+      </div>
+      
+      <div class="event_card" id="bright" tags="cultural">
+        <a href="stepup.html">
+          <div class="info_section cultural">
+            <div class="event_header">
+              <div class="light">
+                <h1>Step Up</h1>
+                <h4>Day 1, March 29, 2019</h4>
+              </div>
+              <span class="minutes"><div class="light">Prizes Worth 45k</div></span>
+              <p class="lighttype">Summit 2019</p>
+            </div>
+            <div class="event_desc">
+              <p class="lighttext">
+                To all the daring dancers out there, Summit 2019, the biggest and boldest techno-cultural extravaganza brought to you by College of Engineering Chengannur, brings you Step Up, an exciting platform to showcase your talents and express your potential. Come join us, and prove your skills, for the stage is all yours to rock and roll!
+              </p>
+            </div>
+            <div class="event_social">
+              <ul>
+                <a href="#" class="fa fa-facebook fa-light"></a>
+                <a href="#" class="fa fa-instagram fa-light"></a>
+              </ul>
+            </div>
+          </div>
+          <div class="blur_back stepup"></div>
+        </a>
+      </div>
+      
+      <div class="event_card" id="bright" tags="cultural">
+        <a href="stepandsyncro.html">
+          <div class="info_section stepandsyncro">
+            <div class="event_header">
+              <div class="light">
+                <h1>Step & Syncro</h1>
+                <h4>Day 1, March 29, 2019</h4>
+              </div>
+              <span class="minutes"><div class="light">Prizes Worth 9k</div></span>
+              <p class="lighttype">Summit 2019</p>
+            </div>
+            <div class="event_desc">
+              <p class="lighttext">
+                Get ready to find your mate to whirl and twirl to the fine tunes of music!
+                <br>
+                <br>
+                Summit 2019 presents the expressive chance to partner up and groove to the Step & Synchro contest, brought to you by College of Engineering Chengannur. Don't miss out on this opportunity to pair up and sync your steps to the world!
+              </p>
+            </div>
+            <div class="event_social">
+              <ul>
+                <a href="#" class="fa fa-facebook fa-light"></a>
+                <a href="#" class="fa fa-instagram fa-light"></a>
+              </ul>
+            </div>
+          </div>
+          <div class="blur_back stepandsyncroimage"></div>
+        </a>
+      </div>
+      
+      <div class="event_card" id="bright" tags="cultural">
+        <a href="duetsong.html">
+          <div class="info_section duetsong">
+            <div class="event_header">
+              <div class="light">
+                <h1>Duet Song</h1>
+                <h4>Day 2, March 30, 2019</h4>
+              </div>
+              <span class="minutes"><div class="light">Prizes Worth 9k</div></span>
+              <p class="lighttype">Summit 2019</p>
+            </div>
+            <div class="event_desc">
+              <p class="lighttext">
+                Find a partner and show us your singing talent!
+                <br>
+                Summit 2019 is proud to present you with Duet Song Competition, a podium to showcase your sync with your vocal partner and the perfect blend of your voices.
+                Join us at College of Engineering Chengannur on 29, 30 and 31 March 2019 to win prizes worth ₹9k and to make your soulful music, the most uplifting version of all by setting it to a skanking, up-tempo rhythm and layering swooping strings over the vocal harmonies.
+                <br>
+              </p>
+            </div>
+            <div class="event_social">
+              <ul>
+                <a href="#" class="fa fa-facebook fa-light"></a>
+                <a href="#" class="fa fa-instagram fa-light"></a>
+              </ul>
+            </div>
+          </div>
+          <div class="blur_back duetsongimage"></div>
+        </a>
+      </div>
+      
+      <div class="event_card" id="bright" tags="cultural">
+        <a href="voiceofsummit.html">
+          <div class="info_section vos">
+            <div class="event_header">
+              <div class="dark">
+                <h1>Voice of Summit</h1>
+                <h4>Day 2, March 30, 2019</h4>
+              </div>
+              <span class="minutes">
+                <div class="dark">Prizes Worth 7k</div>
+              </span>
+              <p class="darktype">Summit 2019</p>
+            </div>
+            <div class="event_desc">
+              <p class="darktext">
+                Summit 2019 hosted by College of Engineering Chengannur proudly presents to you the Voice of Summit competition, an extravagant platform to flaunt your voice and show off your singing skills. Come and join us on 30 March 2019 and leave the listeners mind blown with your flawless notes, adding your own style to the music. Bring the house down and win a prize money worth 7k.
+                <br>
+                So grab that mic, own the stage and steal the show!
+              </p>
+            </div>
+            <div class="event_social">
+              <ul>
+                <a href="#" class="fa fa-facebook "></a>
+                <a href="#" class="fa fa-instagram "></a>
+              </ul>
+            </div>
+          </div>
+          <div class="blur_back vosimage"></div>
+        </a>
+      </div>
+
+      <!--
+      <div class="event_card" id="bright">
+        <a href="event1.html">
+          <div class="info_section tech">
+            <div class="event_header">
+              <div class="dark">
+                <h1>Robo War</h1>
+                <h4>Day 1 2019, March 29</h4>
+              </div>
+              <span class="minutes">
+                <div class="dark">120 Mins</div>
+              </span>
+              <p class="darktype">Electronics Department</p>
+            </div>
+            <div class="event_desc">
+              <p class="darktext">
+                Thought WWE was too mainstream , Get to Summit'19 because we are all set to host the largest robotic war in all of kerala, Get ready for intense robotic action that will leave you begging for more.
+              </p>
+            </div>
+            <div class="event_social">
+              <ul>
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-instagram"></a>
+              </ul>
+            </div>
+          </div>
+          <div class="blur_back robowar"></div>
+        </a>
+      </div>
+      -->
+
+      <div class="light">
+        <h1 class="mobilemore" align=center style="margin-top : 100px ; padding-bottom: 50px">More Events Coming Soon</h1>
+      </div>
+    </div>
 
 
 
@@ -733,215 +704,207 @@ hidePreloader();
 
     <div id='contentSponsor'>
       <div class='heading'>Sponsors</div>
-        <div class='sectionsponsor' align = center >
-          <h4>Our Wonderful Sponsors</h4>
-          <br>
-          <br>
-          <div class="container">
+      <div class='sectionsponsor' align = center >
+        <h4>Our Wonderful Sponsors</h4>
+        <br>
+        <br>
+        <div class="container">
           <div class="row">
-
             <div class="col-lg-6">
-                  <a href = "pulimootil.html"><img style="height : 20% ; width : auto" src="logo/pulimootil-01.png">
-
-
-                  </a>
-              </div>
-
+              <a href = "pulimootil.html"><img style="height : 20% ; width : auto" src="logo/pulimootil-01.png"></a>
             </div>
           </div>
         </div>
-
+      </div>
     </div>
 
 
+
+
     <div id='contentAbout'>
-        <div class='heading'>About</div>
-          <div class='section'>
-            Summit is the biennial techno-cultural fest conducted by College of Engineering,
-  Chengannur, aimed on providing a platform for improving the technical,
-  non-technical and cultural skills of the young engineering minds. It offers a plethora
-  of events ranging from seminars and workshops on the state of art technology
-  to contests that push student’s talents and brain beyond the limits, thereby fetching
-  the best brains from engineering institutions across the nation. The maiden
-  version of the event took place way back in 1998. Then onwards, the event had its
-  sequels in 2000, 2002, 2005, 2009, 2012, 2014 and 2017, each time marking a better
-  success record. The event has fast emerged as one of the best technical festivals
-  of the country over the past years and now resounds as a familiar name across the
-  colleges as well as the industry, nationwide. Today, SUMMIT is a wholesome platform
-  that students across India can look up to.
-        </div>
+      <div class='heading'>About</div>
+      <div class='section'>
+        Summit is the biennial techno-cultural fest conducted by College of Engineering,
+        Chengannur, aimed on providing a platform for improving the technical,
+        non-technical and cultural skills of the young engineering minds. It offers a plethora
+        of events ranging from seminars and workshops on the state of art technology
+        to contests that push student’s talents and brain beyond the limits, thereby fetching
+        the best brains from engineering institutions across the nation. The maiden
+        version of the event took place way back in 1998. Then onwards, the event had its
+        sequels in 2000, 2002, 2005, 2009, 2012, 2014 and 2017, each time marking a better
+        success record. The event has fast emerged as one of the best technical festivals
+        of the country over the past years and now resounds as a familiar name across the
+        colleges as well as the industry, nationwide. Today, SUMMIT is a wholesome platform
+        that students across India can look up to.
       </div>
+    </div>
 
 
     <div id='contentContactUs'>
       <div class='heading'>Contact Us</div>
-       <div class='section'>
-      <h3> Saji Kumar </h3>
-          <p>Staff In-charge, Summit 2019
+      <div class='section'>
+        <h3> Saji Kumar </h3>
+        <p>Staff In-charge, Summit 2019
           <br>Assistant Professor, Electronics Department
           <br>College Of Engineering Chengannur
-          <br>Phone : 9447925002</p>
+          <br>Phone : 9447925002
+        </p>
         <br>
-      <h3> Athul Chandrasenan </h3>
-          <p>SUMMIT Coordinator
-           <br> Phone : 9446039625</p>
-        <br>
-      <h3> Rahul Govind R </h3>
-          <p>SUMMIT Treasurer
-           <br> Phone : 8281937586</p>
-        <br>
-      <h3> Sharad Joe </h3>
-          <p>Sponsorship Lead
-            <br>Phone : 7561062605</p>
 
+        <h3> Athul Chandrasenan </h3>
+        <p>SUMMIT Coordinator
+            <br> Phone : 9446039625
+        </p>
+        <br>
+        
+        <h3> Rahul Govind R </h3>
+        <p>SUMMIT Treasurer
+          <br> Phone : 8281937586
+        </p>
+        <br>
+        
+        <h3> Sharad Joe </h3>
+        <p>Sponsorship Lead
+            <br>Phone : 7561062605
+        </p>
       </div>
     </div>
   </div>
 
 
   <script>
-		particlesJS('particles-js',
-
-		{
-			"particles": {
-				"number": {
-					"value": 160,
-					"density": {
-						"enable": true,
-						"value_area": 800
-					}
-				},
-				"color": {
+    particlesJS('particles-js', {
+      "particles": {
+        "number": {
+          "value": 160,
+          "density": {
+            "enable": true,
+            "value_area": 800
+          }
+        },
+        "color": {
           "value": ["#264da3","#4db6c8","#f4bf2a","#5ca82a","#E8ffff"]
-				},
-				"shape": {
-					"type": "circle",
-					"stroke": {
-						"width": 0,
-						"color": "#000000"
-					},
-					"polygon": {
-						"nb_sides": 5
-					},
-					"image": {
-						"src": "img/github.svg",
-						"width": 100,
-						"height": 100
-					}
-				},
-				"opacity": {
-					"value": 1,
-					"random": true,
-					"anim": {
-						"enable": true,
-						"speed": 1,
-						"opacity_min": 0,
-						"sync": false
-					}
-				},
-				"size": {
-					"value": 3,
-					"random": true,
-					"anim": {
-						"enable": false,
-						"speed": 4,
-						"size_min": 0.3,
-						"sync": false
-					}
-				},
-				"line_linked": {
-					"enable": false,
-					"distance": 150,
-					"color": "#ffffff",
-					"opacity": 0.4,
-					"width": 1
-				},
-				"move": {
-					"enable": true,
-					"speed": 1,
-					"direction": "none",
-					"random": true,
-					"straight": false,
-					"out_mode": "out",
-					"bounce": false,
-					"attract": {
-						"enable": false,
-						"rotateX": 600,
-						"rotateY": 600
-					}
-				}
-			},
-			"interactivity": {
-				"detect_on": "canvas",
-				"events": {
-					"onhover": {
-						"enable": false,
-						"mode": "grab"
-					},
-					"onclick": {
-						"enable": false,
-						"mode": "repulse"
-					},
-					"resize": true
-				},
-				"modes": {
-					"grab": {
-						"distance": 400,
-						"line_linked": {
-							"opacity": 1
-						}
-					},
-					"bubble": {
-						"distance": 250,
-						"size": 0,
-						"duration": 2,
-						"opacity": 0,
-						"speed": 3
-					},
-					"repulse": {
-						"distance": 400,
-						"duration": 0.4
-					},
-					"push": {
-						"particles_nb": 4
-					},
-					"remove": {
-						"particles_nb": 2
-					}
-				}
-			},
-			"retina_detect": true
-		}
-
-		);
-
-				</script>
-
-        <style>
-
-        .fa {
-          padding: 9px;
-          font-size: 15px;
-          width: 35px;
-          text-align: center;
-          text-decoration: none;
-          border-radius: 50%;
+        },
+        "shape": {
+          "type": "circle",
+          "stroke": {
+            "width": 0,
+            "color": "#000000"
+          },
+          "polygon": {
+            "nb_sides": 5
+          },
+          "image": {
+            "src": "img/github.svg",
+            "width": 100,
+            "height": 100
+          }
+        },
+        "opacity": {
+          "value": 1,
+          "random": true,
+          "anim": {
+            "enable": true,
+            "speed": 1,
+            "opacity_min": 0,
+            "sync": false
+          }
+        },
+        "size": {
+          "value": 3,
+          "random": true,
+          "anim": {
+            "enable": false,
+            "speed": 4,
+            "size_min": 0.3,
+            "sync": false
+          }
+        },
+        "line_linked": {
+          "enable": false,
+          "distance": 150,
+          "color": "#ffffff",
+          "opacity": 0.4,
+          "width": 1
+        },
+        "move": {
+          "enable": true,
+          "speed": 1,
+          "direction": "none",
+          "random": true,
+          "straight": false,
+          "out_mode": "out",
+          "bounce": false,
+          "attract": {
+            "enable": false,
+            "rotateX": 600,
+            "rotateY": 600
+          }
         }
-
-        .fa:hover {
-          opacity: 0.7;
+      },
+      "interactivity": {
+        "detect_on": "canvas",
+        "events": {
+          "onhover": {
+            "enable": false,
+            "mode": "grab"
+          },
+          "onclick": {
+            "enable": false,
+            "mode": "repulse"
+          },
+          "resize": true
+        },
+        "modes": {
+          "grab": {
+            "distance": 400,
+            "line_linked": {
+              "opacity": 1
+            }
+          },
+          "bubble": {
+            "distance": 250,
+            "size": 0,
+            "duration": 2,
+            "opacity": 0,
+            "speed": 3
+          },
+          "repulse": {
+            "distance": 400,
+            "duration": 0.4
+          },
+          "push": {
+            "particles_nb": 4
+          },
+          "remove": {
+            "particles_nb": 2
+          }
         }
+      },
+      "retina_detect": true
+    });
 
-        .fa-facebook {
+  </script>
 
-          color: black;
-        }
-        .fa-instagram {
-
-        color: black;
-      }
-
-      </style>
+  <style>
+    .fa {
+      padding: 9px;
+      font-size: 15px;
+      width: 35px;
+      text-align: center;
+      text-decoration: none;
+      border-radius: 50%;
+    }
+    .fa:hover {
+      opacity: 0.7;
+    }
+    .fa-facebook {
+      color: black;
+    }
+    .fa-instagram {
+      color: black;
+    }
+  </style>
 </body>
 
 </html>
