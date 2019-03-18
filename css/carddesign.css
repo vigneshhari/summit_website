@@ -284,6 +284,24 @@ html, body {
   .actionsongoogle {
     background: linear-gradient(to right, #f5f5f5 50%, transparent 100%);
   }
+  .countycricket {
+    background: linear-gradient(to right, #6b710f 50%, transparent 100%);
+  }
+  .tabletennis {
+    background: linear-gradient(to right, #4c8cb8 50%, transparent 100%);
+  }
+  .slamdunk {
+    background: linear-gradient(to right, #fc6500 50%, transparent 100%);
+  }
+  .blocknroll {
+    background: linear-gradient(to right, #e0c393 50%, transparent 100%);
+  }
+  .technicalquiz {
+    background: linear-gradient(to right, #75c4d6 50%, transparent 100%);
+  }
+  .blindcoding {
+    background: linear-gradient(to right, #000000 50%, transparent 100%);
+  }
   .blur_back {
     width: 100%;
     height: 100%;
@@ -396,8 +414,30 @@ html, body {
     background: linear-gradient(to top, #1c1c1c 50%, transparent 100%);
     display: inline-grid;
   }
-
-  
+  .countycricket  {
+    background: linear-gradient(to top, #6b710f 50%, transparent 100%);
+    display: inline-grid;
+  }
+  .tabletennis {
+    background: linear-gradient(to top, #4c8cb8 50%, transparent 100%);
+    display: inline-grid;
+  }
+  .slamdunk {
+    background: linear-gradient(to top, #fc6500 50%, transparent 100%);
+    display: inline-grid;
+  }
+  .blocknroll {
+    background: linear-gradient(to top, #e0c393 50%, transparent 100%);
+    display: inline-grid;
+  }
+  .technicalquiz {
+    background: linear-gradient(to top, #75c4d6 50%, transparent 100%);
+    display: inline-grid;
+  }
+  .blindcoding {
+    background: linear-gradient(to top, #000000 50%, transparent 100%);
+    display: inline-grid;
+  }
 }
 .robowar {
    background: url("../images/robowar.jpg"); 
@@ -453,4 +493,21 @@ html, body {
 .actionsongoogleimage {
   background: url("../images/actionsongoogle.png"); 
 }
-
+.countycricketimage {
+  background: url("../images/countycricket.jpg"); 
+}
+.tabletennisimage {
+  background: url("../images/tabletennis.jpg"); 
+}
+.slamdunkimage {
+  background: url("../images/slamdunk.jpg"); 
+}
+.blocknrollimage {
+  background: url("../images/blocknroll.jpg");
+}
+.technicalquizimage {
+  background: url("../images/technicalquiz.jpg");
+}
+.blindcodingimage {
+  background-color: #000000;
+}
