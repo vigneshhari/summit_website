@@ -317,6 +317,9 @@ html, body {
   .advancedrobotics {
     background: linear-gradient(to right, #dfdfdf 50%, transparent 100%);
   }
+  .code_war {
+    background: linear-gradient(to right, #dfdfdf 50%, transparent 100%);
+  }
   .blur_back {
     width: 100%;
     height: 100%;
@@ -473,69 +476,73 @@ html, body {
     background: linear-gradient(to top, #dfdfdf 50%, transparent 100%);
     display: inline-grid;
   }
+  .code_war {
+    background: linear-gradient(to top, #dfdfdf 50%, transparent 100%);
+    display: inline-grid;
+  }
 }
 .robowar {
-   background: url("../images/robowar.jpg"); 
+   background: url("../images/robowar.jpg");
 }
 .doodle {
-   background: url("../images/doodle.jpg"); 
+   background: url("../images/doodle.jpg");
 }
 .stepup {
-  background: url("../images/stepup.jpeg"); 
+  background: url("../images/stepup.jpeg");
 }
 .tiktokimage {
-  background: url("../images/tiktok.jpeg"); 
+  background: url("../images/tiktok.jpeg");
 }
 .pubgimage {
-  background: url("../images/pubg.jpg"); 
+  background: url("../images/pubg.jpg");
 }
 .photographyimage {
-  background: url("../images/photography.jpg"); 
+  background: url("../images/photography.jpg");
 }
 .stepandsyncroimage {
-  background: url("../images/stepandsyncro.jpg"); 
+  background: url("../images/stepandsyncro.jpg");
 }
 .dancerofsummitimage {
   background: url("../images/dancerofsummit.jpg")
 }
 .duetsongimage {
-  background: url("../images/duetsong.jpg"); 
+  background: url("../images/duetsong.jpg");
 }
 .soldraimage {
-  background: url("../images/soldra.jpg"); 
+  background: url("../images/soldra.jpg");
 }
 .gsokaimage {
-  background: url("../images/gsoka.png"); 
+  background: url("../images/gsoka.png");
 }
 .impedanzoimage {
   background: url("../images/impedanzo.jpg");
 }
 .gnosisimage {
-  background: url("../images/gnosis.jpg"); 
+  background: url("../images/gnosis.jpg");
 }
 .tracebackimage {
   background: url("../images/traceback.jpg");
 }
 .spotwebimage {
-  background: url("../images/spotweb.jpg"); 
+  background: url("../images/spotweb.jpg");
 }
 .vosimage {
-  background: url("../images/vos.jpg"); 
+  background: url("../images/vos.jpg");
 }
 .reactnativeimage {
-  background: url("../images/reactnative.png"); 
+  background: url("../images/reactnative.png");
 }
 .actionsongoogleimage {
-  background: url("../images/actionsongoogle.png"); 
+  background: url("../images/actionsongoogle.png");
 }
 .countycricketimage {
-  background: url("../images/countycricket.jpg"); 
+  background: url("../images/countycricket.jpg");
 }
 .tabletennisimage {
-  background: url("../images/tabletennis.jpg"); 
+  background: url("../images/tabletennis.jpg");
 }
 .slamdunkimage {
-  background: url("../images/slamdunk.jpg"); 
+  background: url("../images/slamdunk.jpg");
 }
 .blocknrollimage {
   background: url("../images/blocknroll.jpg");
@@ -560,4 +567,7 @@ html, body {
 }
 .advancedroboticsimage {
   background: url("../images/advancedrobotics.jpg");
+}
+.code_warimage {
+   background: url("../images/code_war.jpeg");
 }
