@@ -320,6 +320,12 @@ html, body {
   .code_war {
     background: linear-gradient(to right, #dfdfdf 50%, transparent 100%);
   }
+  .circathalon {
+    background: linear-gradient(to right, #318629 50%, transparent 100%);
+  }
+  .ignite {
+    background: linear-gradient(to right, #efefef 50%, transparent 100%);
+  }
   .blur_back {
     width: 100%;
     height: 100%;
@@ -480,6 +486,14 @@ html, body {
     background: linear-gradient(to top, #dfdfdf 50%, transparent 100%);
     display: inline-grid;
   }
+  .circathalon {
+    background: linear-gradient(to top, #318629 50%, transparent 100%);
+    display: inline-grid;
+  }
+  .ignite {
+    background: linear-gradient(to top, #efefef 50%, transparent 100%);
+    display: inline-grid;
+  }
 }
 .robowar {
    background: url("../images/robowar.jpg");
@@ -570,4 +584,10 @@ html, body {
 }
 .code_warimage {
    background: url("../images/code_war.jpeg");
+}
+.circathalonimage {
+  background: url("../images/circathalon.jpg");
+}
+.igniteimage {
+  background: url("../images/ignite.jpeg");
 }
