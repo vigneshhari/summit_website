@@ -217,7 +217,7 @@ function openingAnimation() {
     offset: '-=3000',
   };
   var countDownShow = {
-    targets: '#divCountdown',
+    targets: '#divCountdowndone',
     opacity: [0, 1],
     easing: 'easeOutSine',
     offset: '-=3000',

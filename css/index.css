@@ -84,17 +84,17 @@
   align-items: center;
   z-index: 9;
 }
-#divCountdown {
+#divCountdowndone {
   display: flex;
   opacity: 0;
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
 }
-#divCountdown * {
+#divCountdowndone * {
   padding: 4px;
 }
-#countdown {
+#countdowndone {
   font-family: 'Lato';
   font-weight: bold;
 }
